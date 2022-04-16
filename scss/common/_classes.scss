@@ -1,5 +1,5 @@
 .g__title {
-  font-size: 3.125rem;
+  font-size: 3rem;
   font-weight: 700;
 
   @include until($desktop) {
@@ -9,8 +9,69 @@
 
 .g__head {
   margin-bottom: 1.8rem;
+
+  @include until($desktop) {
+    margin-bottom: 1rem;
+  }
 }
 
+.g__form {
+  max-width: 24.375rem;
+  margin: 0 auto;
+
+  &-wrapper {
+    background-color: $gray_light;
+    border-radius: 5px;
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    padding-bottom: 6rem;
+
+    @include until($desktop) {
+      padding: 2rem .5rem;
+    }
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-row-submit {
+    margin-top: 2.7rem;
+  }
+
+  &-label {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  &-input {
+    background-color: $pure_white;
+    border: none;
+    color: $gray_primary;
+    font-size: 0.96875rem;
+    padding: .7rem 1rem;
+    font-weight: 500;
+    height: auto;
+    box-shadow: none;
+    border: 1px solid $pure_black!important;
+    margin-bottom: .1875rem;
+    font-family: $font_default;
+  }
+
+  &-btn {
+    background-color: $main_color;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 0.7rem 1rem;
+  }
+}
 
 @include phone-until{
   

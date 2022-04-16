@@ -77,28 +77,40 @@
                     </div>
                 </nav>
                 <section class="c__breadcrumb"></section>
-                <section class="s__login">
+                <section class="s__register">
                     <div class="l-container-big">
-                        <div class="g__head login__head has-text-centered">
-                            <h1 class="g__title">Zaloguj się</h1>
+                        <div class="g__head register__head has-text-centered">
+                            <h1 class="g__title">Zarejestruj się</h1>
                         </div>
-                        <div class="g__form-wrapper login__form-wrapper">
+                        <div class="g__form-wrapper">
                             <form action="" class="g__form">
                                 <div class="g__form-row">
+                                    <label class="g__form-label">Imię</label>
+                                    <input type="text" name="registerName" class="g__form-input input" required>
+                                </div>
+                                <div class="g__form-row">
+                                    <label class="g__form-label">Nazwisko</label>
+                                    <input type="text" name="registerSurname" class="g__form-input input" required>
+                                </div>
+                                <div class="g__form-row">
                                     <label class="g__form-label">Email</label>
-                                    <input type="email" name="loginEmail" class="g__form-input input" required>
+                                    <input type="email" name="registerEmail" class="g__form-input input" required>
                                 </div>
                                 <div class="g__form-row">
                                     <label class="g__form-label">Hasło</label>
-                                    <input type="password" name="loginPassword" class="g__form-input input" required>
+                                    <input type="password" name="registerPassword" class="g__form-input input" required>
+                                </div>
+                                <div class="g__form-row">
+                                    <label class="g__form-label">Powtórz hasło</label>
+                                    <input type="password" name="registerRepeatPassword" class="g__form-input input" required>
                                 </div>
                                 <div class="g__form-row g__form-row-submit">
-                                    <button class="g__form-btn">Zaloguj</button>
+                                    <button class="g__form-btn">Zarejestruj</button>
                                 </div>
                             </form>
-                            <div class="login__register-info has-text-centered">
-                                Nie masz konta? 
-                                <a href="../register/register.html" class="login__register-info-link">Zarejestruj się</a> 
+                            <div class="register__login-info has-text-centered">
+                                Masz konto?
+                                <a href="../login/login.html" class="register__login-info-link">Zaloguj się</a> 
                             </div>
                         </div>
                     </div>
