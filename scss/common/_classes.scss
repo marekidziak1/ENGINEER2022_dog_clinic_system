@@ -1,0 +1,51 @@
+.g__title {
+  font-size: 3.125rem;
+  font-weight: 700;
+
+  @include until($desktop) {
+    font-size: 1.8rem;
+  }
+}
+
+.g__head {
+  margin-bottom: 1.8rem;
+}
+
+
+@include phone-until{
+  
+}
+
+@include from($tablet) {
+  
+}
+
+@include until($desktop) {
+  
+}
+
+@include from($desktop) {
+  
+}
+
+@include from($fullhd) {
+  
+}
+
+@keyframes shadow-pulse{
+  0% {
+    box-shadow: 0 0 0 0px rgba($main_color, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba($main_color, 0);
+  }
+}
+
+@keyframes shadow-pulse-white{
+  0% {
+    box-shadow: 0 0 0 0px rgba($pure_white, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba($pure_white, 0);
+  }
+}

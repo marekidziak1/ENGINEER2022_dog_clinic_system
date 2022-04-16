@@ -1,0 +1,44 @@
+// bulma
+$gap: 32px;
+@import 'plugins/bulma-0.9.3/sass/utilities/_all';
+@import 'plugins/bulma-0.9.3/sass/base/_all';
+@import 'plugins/bulma-0.9.3/sass/elements/_all';
+@import 'plugins/bulma-0.9.3/sass/components/_all';
+@import 'plugins/bulma-0.9.3/sass/grid/_all';
+@import 'plugins/bulma-0.9.3/sass/layout/_all';
+// normalize
+@import 'plugins/normalize';
+// @import 'plugins/sass-rem-master/rem';
+// base settings
+@import 'base/reset';
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/settings';
+@import 'base/structure';
+@import 'common/classes';
+
+// sections
+.s__home-main {
+    @import 'pages/home/_home_main';
+}
+.s__contact {
+    @import 'pages/contact/_contact';
+}
+.s__login {
+    @import 'pages/login/_login';
+}
+
+
+// components 
+.c__navigation {
+    @import 'components/_navigation';
+}
+.c__menu-mobile {
+    @import 'components/_menu_mobile';
+}
+.c__footer {
+    @import 'components/_footer';
+}
+.c__breadcrumb {
+    @import 'components/_breadcrumb';
+}

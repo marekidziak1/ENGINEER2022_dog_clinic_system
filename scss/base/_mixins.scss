@@ -1,0 +1,23 @@
+
+@mixin selection($background, $text){
+
+    /* WebKit/Blink Browsers */
+    ::selection {
+      background: $background; 
+      color: $text;
+    }
+    
+    /* Gecko Browsers */
+    ::-moz-selection {
+      background: $background; 
+      color: $text;
+    }
+
+}
+
+@mixin phone-from {
+  @media (min-width: 551px) { @content; }
+}
+@mixin phone-until {
+  @media (max-width: 550px) { @content; }
+}

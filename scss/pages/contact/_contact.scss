@@ -1,0 +1,84 @@
+& {
+    min-height: 100vh;
+    background-image: url('../assets/img/contact_bg_img.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 6rem;
+
+    @include until($desktop) {
+        padding-top: 3rem;
+    }
+}
+.contact__content {   
+    width: 36.25rem;
+    max-width: 100%;
+    
+    @include until($desktop) {
+        padding: 1rem;
+    }
+
+    @include from($desktop) {
+        margin-right: 10%;
+    }
+}
+
+.contact__content-box {
+    background-color: $main_color;
+    display: flex;
+    border-radius: 5px;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+
+    @include until($desktop) {
+        padding: 1.5rem;
+    }
+}
+
+.contact__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact__content {
+    &-header {
+        font-size: 2.75rem;
+        font-weight: 700;
+        position: relative;
+
+        @include until($desktop) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &-text {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        @include until($desktop) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &-breaker {
+        height: 4px;
+        background-color: $color_default;
+    }
+
+    &-icon {
+        width: 16%;
+        padding-right: 1rem;
+
+
+        @include until($desktop) {
+            max-width: 3rem;
+            width: 25%;
+
+            img {
+                width: 2.5rem;
+            }
+        }
+    }
+}
