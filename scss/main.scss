@@ -44,6 +44,12 @@ $gap: 32px;
 .s__add-dog {
     @import 'pages/add_dog/add_dog';
 }
+.s__reservation {
+    @import 'pages/reservation/reservation';
+}
+.s__doctors {
+    @import 'pages/doctors/doctors';
+}
 
 // components 
 .c__navigation {

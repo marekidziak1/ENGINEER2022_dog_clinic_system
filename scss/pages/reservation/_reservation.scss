@@ -1,0 +1,65 @@
+& {
+    padding-bottom: 3.5rem;
+}
+
+.reservation__steps-container {
+}
+
+.reservation__form {
+    &-label {
+        display: block;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: .4rem;
+    }
+    &-row {
+        &:not(:last-of-type) {
+            margin-bottom: .8rem;
+        }
+    }
+}
+
+.reservation__step {
+    margin-bottom: 2rem;
+
+    &-1 {
+        max-width: 60rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    &-header {
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &-calendar-wrapper {
+        text-align: center;
+    }
+}
+
+.reservation__submit-box {
+    text-align: center;
+}
+
+@include phone-until{
+
+}
+
+@include from($tablet) {
+
+}
+
+@include until($desktop) {
+
+}
+
+@include from($desktop) {
+
+}
+
+@include from($fullhd) {
+
+}

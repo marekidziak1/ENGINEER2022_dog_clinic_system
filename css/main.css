@@ -8773,6 +8773,52 @@ body button:hover, body a:hover {
 .s__add-dog .dog__wrapper {
   margin-bottom: 4rem; }
 
+.s__reservation {
+  padding-bottom: 3.5rem; }
+
+.s__reservation .reservation__form-label {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: .4rem; }
+
+.s__reservation .reservation__form-row:not(:last-of-type) {
+  margin-bottom: .8rem; }
+
+.s__reservation .reservation__step {
+  margin-bottom: 2rem; }
+  .s__reservation .reservation__step-1 {
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-bottom: 2rem; }
+  .s__reservation .reservation__step-header {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem; }
+  .s__reservation .reservation__step-calendar-wrapper {
+    text-align: center; }
+
+.s__reservation .reservation__submit-box {
+  text-align: center; }
+
+.s__doctors {
+  padding-bottom: 2rem; }
+
+.s__doctors .doctor__item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%; }
+
+.s__doctors .doctor__item-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3CDAC9; }
+  @media screen and (max-width: 1023px) {
+    .s__doctors .doctor__item-name {
+      font-size: 1.2rem; } }
+
 .c__navigation {
   background-color: #3CDAC9;
   position: fixed;
