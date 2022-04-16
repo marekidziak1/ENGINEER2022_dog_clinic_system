@@ -1,0 +1,95 @@
+& {
+    padding-bottom: 2rem;
+}
+
+.dogs__btn {
+    &-add {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center ;
+        background-color: $main_color;
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0.4rem 1.5rem;
+
+        @include until($desktop) {
+            font-size: 1rem;
+        }
+    }
+
+    &-text {
+        margin-right: .7rem;
+    }
+
+    &-icon {
+        i {
+            font-size: 2rem;
+
+            @include until($desktop) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.dogs__container {
+    background-color: $gray_light;
+    min-height: 100vh;
+    padding: 2rem .5rem;
+}
+
+.dogs {
+    &__list {
+        margin: -.1rem;
+    }
+    &__item {
+        padding: .1rem;
+
+        &-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+
+        &-photo-box {
+            
+        }
+
+        &-name {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: $main_color;
+
+            @include until($desktop) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+@include phone-until{
+
+}
+
+@include from($tablet) {
+
+}
+
+@include until($desktop) {
+
+}
+
+@include from($desktop) {
+
+}
+
+@include from($fullhd) {
+
+}

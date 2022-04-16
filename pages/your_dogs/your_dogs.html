@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#3CDAC9" />
+    <title>Dog clinic</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- global scripts -->
+    <script src="../../js/global_functions.js"></script>
+    <script src="../../js/global_main.js"></script>
+    <!-- end global scripts -->
+    
+    <!-- here scripts for only single page -->
+
+    <!-- end scripts for only single page -->
+</head>
+<body>
+    <div class="l-external-container">
+        <div class="l-main">
+            <main class="l-outside-footer">
+                <nav class="c__navigation js-navigation">
+                    <div class="l-container-big">
+                        <div class="nav__wrapper">
+                            <div class="nav__side-left">
+                                <div class="nav__logo-box">
+                                    <img src="../../assets/svg/dog-icon.svg" alt="Logo">
+                                </div>
+                            </div>
+                            <div class="nav__side-right">
+                                <div class="nav__links-box">
+                                    <div class="nav__link-list">
+                                        <a href="../home/home.html" class="nav__link-item">Home</a>
+                                        <a href="../reservation/reservation.html" class="nav__link-item">Zarezerwuj wizytę</a>
+                                        <a href="../doctors/doctors.html" class="nav__link-item">Lekarze</a>
+                                        <a href="../contact/contact.html" class="nav__link-item">Kontakt</a>
+                                    </div>
+                                </div>
+                                <div class="nav__account-box">
+                                    <div class="nav__account-links">
+                                        <a href="../account_edit/account_edit.html" class="nav__account-link-item">test@test.pl</a>
+                                        <a href="../home/home.html" class="nav__account-link-item">Wyloguj</a>
+                                    </div>
+                                </div>
+                                <div class="nav__mobile-menu-wrapper">
+                                    <div class="nav__mobile-menu-trigger">
+                                        <div class="nav__hamburger-box hamburger-init-hidden">
+                                            <div class="hamburger hamburger--spin js-menu-trigger-mobile hamburger__mobile">
+                                                <div class="hamburger-box">
+                                                    <div class="hamburger-inner"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <aside class="c__menu-mobile js-menu-mobile">
+                                        <div class="menu-mobile__container">
+                                            <div class="menu__page-list">
+                                                <a href="../home/home.html" class="menu__page-link">Home</a>
+                                                <a href="../reservation/reservation.html" class="menu__page-link">Zarezerwuj wizytę</a>
+                                                <a href="../doctors/doctors.html" class="menu__page-link">Lekarze</a>
+                                                <a href="../contact/contact.html" class="menu__page-link">Kontakt</a>
+                                            </div>
+                                            <div class="menu__account-links">
+                                                <a href="../account_edit/account_edit.html" class="menu__page-account-link">test@test.pl</a>
+                                                <a href="../home/home.html" class="menu__page-account-link">Wyloguj</a>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <section class="c__breadcrumb"></section>
+                <section class="s__your-dogs">
+                    <div class="l-container-big">
+                        <div class="g__head is-multiline columns">
+                            <div class="g__head-left column is-6-desktop is-full-touch">
+                                <h1 class="g__title">Twoje psy</h1>
+                            </div>
+                            <div class="g__head-right column is-6-desktop is-full-touch has-text-right">
+                                <a href="../add_dog/add_dog.html" class="dogs__btn-add">
+                                    <div class="dogs__btn-text">Dodaj nowego psa</div>
+                                    <div class="dogs__btn-icon">
+                                        <i class="mdi mdi-plus-circle-outline"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dogs__container">
+                            <div class="l-container-small dogs__wrapper">
+                                <ul class="dogs__list is-multiline columns">
+                                    <li class="dogs__item column is-3-desktop is-6-tablet">
+                                        <a href="../your_dog/your_dog.html" class="box dogs__item-link">
+                                            <div class="g__avatar-box dogs__item-photo-box">
+                                                <img src="../../assets/img/alex_photo.png" alt="avatar" class="g__avatar-img-uploaded dogs__item-img-uploaded">
+                                            </div>
+                                            <div class="dogs__item-name">
+                                                Alex
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dogs__item column is-3-desktop is-6-tablet">
+                                        <a href="../your_dog/your_dog.html" class="box dogs__item-link">
+                                            <div class="g__avatar-box dogs__item-photo-box">
+                                                <img src="../../assets/svg/dog_avatar.svg" alt="avatar" class="g__avatar-img-no-photo dogs__item-img-no-photo">
+                                            </div>
+                                            <div class="dogs__item-name">
+                                                Alex
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dogs__item column is-3-desktop is-6-tablet">
+                                        <a href="../your_dog/your_dog.html" class="box dogs__item-link">
+                                            <div class="g__avatar-box dogs__item-photo-box">
+                                                <img src="../../assets/svg/dog_avatar.svg" alt="avatar" class="g__avatar-img-no-photo dogs__item-img-no-photo">
+                                            </div>
+                                            <div class="dogs__item-name">
+                                                Alex
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dogs__item column is-3-desktop is-6-tablet">
+                                        <a href="../your_dog/your_dog.html" class="box dogs__item-link">
+                                            <div class="g__avatar-box dogs__item-photo-box">
+                                                <img src="../../assets/svg/dog_avatar.svg" alt="avatar" class="g__avatar-img-no-photo dogs__item-img-no-photo">
+                                            </div>
+                                            <div class="dogs__item-name">
+                                                Alex
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dogs__item column is-3-desktop is-6-tablet">
+                                        <a href="../your_dog/your_dog.html" class="box dogs__item-link">
+                                            <div class="g__avatar-box dogs__item-photo-box">
+                                                <img src="../../assets/svg/dog_avatar.svg" alt="avatar" class="g__avatar-img-no-photo dogs__item-img-no-photo">
+                                            </div>
+                                            <div class="dogs__item-name">
+                                                Alex
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="l-footer-fixed">
+                <div class="c__footer">
+                    <div class="l-container-big">
+                        Copyright © 2022 Dog clinic
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

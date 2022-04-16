@@ -43,8 +43,8 @@
                                 </div>
                                 <div class="nav__account-box">
                                     <div class="nav__account-links">
-                                        <a href="../login/login.html" class="nav__account-link-item">Zaloguj</a>
-                                        <a href="../register/register.html" class="nav__account-link-item">Zarejestruj</a>
+                                        <a href="../account_edit/account_edit.html" class="nav__account-link-item">test@test.pl</a>
+                                        <a href="../home/home.html" class="nav__account-link-item">Wyloguj</a>
                                     </div>
                                 </div>
                                 <div class="nav__mobile-menu-wrapper">
@@ -66,8 +66,8 @@
                                                 <a href="../contact/contact.html" class="menu__page-link">Kontakt</a>
                                             </div>
                                             <div class="menu__account-links">
-                                                <a href="../login/login.html" class="menu__page-account-link">Zaloguj</a>
-                                                <a href="../register/register.html" class="menu__page-account-link">Zarejestruj</a>
+                                                <a href="../account_edit/account_edit.html" class="menu__page-account-link">test@test.pl</a>
+                                                <a href="../home/home.html" class="menu__page-account-link">Wyloguj</a>
                                             </div>
                                         </div>
                                     </aside>
@@ -77,29 +77,40 @@
                     </div>
                 </nav>
                 <section class="c__breadcrumb"></section>
-                <section class="s__login">
+                <section class="s__add-dog">
                     <div class="l-container-big">
-                        <div class="g__head login__head has-text-centered">
-                            <h1 class="g__title">Zaloguj się</h1>
+                        <div class="g__head">
+                            <h1 class="g__title">Dodawanie nowego psa</h1>
                         </div>
-                        <div class="g__form-wrapper login__form-wrapper">
-                            <form action="" class="g__form">
-                                <div class="g__form-row">
-                                    <label class="g__form-label">Email</label>
-                                    <input type="email" name="loginEmail" class="g__form-input input" required>
+                        <div class="dog__container">
+                            <div class="dog__wrapper is-multiline columns">
+                                <div class="dog__avatar column is-5-desktop is-full-touch">
+                                    <div class="g__avatar-box dog__photo-box">
+                                        <img src="../../assets/svg/dog_avatar.svg" alt="avatar" class="g__avatar-img-no-photo dog__img-no-photo">
+                                    </div>
+                                    <button class="g__btn dog__btn-change-avatar">
+                                        Zmień avatar
+                                    </button>
                                 </div>
-                                <div class="g__form-row">
-                                    <label class="g__form-label">Hasło</label>
-                                    <input type="password" name="loginPassword" class="g__form-input input" required>
+                                <div class="dog__form column is-7-desktop is-full-touch">
+                                    <form action="" class="g__form">
+                                        <div class="g__form-row">
+                                            <label class="g__form-label">Imię</label>
+                                            <input type="text" name="" class="g__form-input input" required>
+                                        </div>
+                                        <div class="g__form-row">
+                                            <label class="g__form-label">Rasa</label>
+                                            <input type="text" name="" class="g__form-input input" required>
+                                        </div>
+                                        <div class="g__form-row">
+                                            <label class="g__form-label">Rok urodzenia</label>
+                                            <input type="number" name="" class="g__form-input input" required>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="g__form-row g__form-row-submit">
-                                    <!-- <button class="g__form-btn">Zaloguj</button> -->
-                                    <a href="../your_dogs/your_dogs.html" class="g__form-btn">Zaloguj</a>
-                                </div>
-                            </form>
-                            <div class="login__register-info has-text-centered">
-                                Nie masz konta? 
-                                <a href="../register/register.html" class="login__register-info-link">Zarejestruj się</a> 
+                            </div>
+                            <div class="dog__bottom">
+                                <button class="g__btn">Dodaj</button>
                             </div>
                         </div>
                     </div>

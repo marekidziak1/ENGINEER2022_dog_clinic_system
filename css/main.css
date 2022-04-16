@@ -8382,7 +8382,7 @@ body button:hover, body a:hover {
       max-width: 600px; } }
 
 .l-container-small {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0px auto; }
 
 .l-container-middle {
@@ -8412,7 +8412,7 @@ body button:hover, body a:hover {
   font-weight: 700; }
   @media screen and (max-width: 1023px) {
     .g__title {
-      font-size: 1.8rem; } }
+      font-size: 1.5rem; } }
 
 .g__head {
   margin-bottom: 1.8rem; }
@@ -8460,7 +8460,43 @@ body button:hover, body a:hover {
     font-size: 1.25rem;
     font-weight: 700;
     border-radius: 4px;
-    padding: 0.7rem 1rem; }
+    padding: 0.7rem 1rem;
+    text-align: center; }
+
+.g__avatar-box {
+  width: 9rem;
+  height: 9rem;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff; }
+  @media screen and (max-width: 1023px) {
+    .g__avatar-box {
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: .5rem; } }
+
+.g__avatar-img-uploaded {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.g__btn {
+  background-color: #3CDAC9;
+  box-shadow: 0 1px 13px 0px #00000040;
+  padding: .45rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 5px;
+  min-width: 11.875rem; }
 
 @keyframes shadow-pulse {
   0% {
@@ -8609,6 +8645,133 @@ body button:hover, body a:hover {
 
 .s__account-edit {
   padding-bottom: 3rem; }
+
+.s__your-dogs {
+  padding-bottom: 2rem; }
+
+.s__your-dogs .dogs__btn-add {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3CDAC9;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.4rem 1.5rem; }
+  @media screen and (max-width: 1023px) {
+    .s__your-dogs .dogs__btn-add {
+      font-size: 1rem; } }
+
+.s__your-dogs .dogs__btn-text {
+  margin-right: .7rem; }
+
+.s__your-dogs .dogs__btn-icon i {
+  font-size: 2rem; }
+  @media screen and (max-width: 1023px) {
+    .s__your-dogs .dogs__btn-icon i {
+      font-size: 1rem; } }
+
+.s__your-dogs .dogs__container {
+  background-color: #f3f3f3;
+  min-height: 100vh;
+  padding: 2rem .5rem; }
+
+.s__your-dogs .dogs__list {
+  margin: -.1rem; }
+
+.s__your-dogs .dogs__item {
+  padding: .1rem; }
+  .s__your-dogs .dogs__item-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; }
+  .s__your-dogs .dogs__item-name {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #3CDAC9; }
+    @media screen and (max-width: 1023px) {
+      .s__your-dogs .dogs__item-name {
+        font-size: 1.2rem; } }
+
+.s__your-dog {
+  padding-bottom: 2rem; }
+
+.s__your-dog .dog__container {
+  background-color: #f3f3f3;
+  padding: 2rem; }
+
+.s__your-dog .dog__btn-back {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.25rem;
+  padding: .5rem 1.5rem;
+  display: inline-flex;
+  border-radius: 4px; }
+  .s__your-dog .dog__btn-back i {
+    margin-right: .5rem;
+    font-size: 1.3rem; }
+
+.s__your-dog .dog__back {
+  margin-bottom: 1.4rem; }
+
+.s__your-dog .dog__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.s__your-dog .dog__bottom {
+  text-align: right; }
+
+.s__your-dog .dog__actions {
+  align-self: center;
+  display: flex;
+  justify-content: center; }
+  .s__your-dog .dog__actions-link {
+    display: inline-flex;
+    color: #ffffff;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    min-width: 14rem; }
+    .s__your-dog .dog__actions-link:not(:last-of-type) {
+      margin-bottom: 1rem; }
+    .s__your-dog .dog__actions-link.--red {
+      background-color: #FF3C53; }
+    .s__your-dog .dog__actions-link.--blue {
+      background-color: #3CADFF; }
+    .s__your-dog .dog__actions-link.--yellow {
+      background-color: #FFBC10; }
+    .s__your-dog .dog__actions-link i {
+      margin-left: .6rem;
+      font-size: 1.5rem;
+      line-height: 1.1; }
+  .s__your-dog .dog__actions-btns-wrapper {
+    display: inline-flex;
+    flex-direction: column; }
+
+.s__add-dog {
+  padding-bottom: 2rem; }
+
+.s__add-dog .dog__container {
+  background-color: #f3f3f3;
+  padding: 2rem;
+  max-width: 65rem;
+  margin: 0 auto; }
+
+.s__add-dog .dog__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.s__add-dog .dog__bottom {
+  text-align: center; }
+
+.s__add-dog .dog__wrapper {
+  margin-bottom: 4rem; }
 
 .c__navigation {
   background-color: #3CDAC9;
