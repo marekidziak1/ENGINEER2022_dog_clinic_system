@@ -8505,12 +8505,12 @@ body button:hover, body a:hover {
   .g__row-box:not(:last-of-type) {
     margin-bottom: 1rem; }
   .g__row-box-content {
-    margin: -2rem; }
+    margin: -1.2rem; }
     @media screen and (max-width: 1023px) {
       .g__row-box-content {
         margin: -.75rem; } }
   .g__row-box-column {
-    padding: 2rem; }
+    padding: 1.2rem; }
     @media screen and (max-width: 1023px) {
       .g__row-box-column {
         padding: .75rem; } }
@@ -8534,6 +8534,38 @@ body button:hover, body a:hover {
     font-size: 1rem; }
   .g__row-box-date {
     font-size: 1.25rem; }
+
+.g__btn-action {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 1px 13px 0px #00000040;
+  padding: .35rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 14.375rem;
+  max-width: 100%;
+  display: inline-flex;
+  justify-content: center; }
+  .g__btn-action.--red {
+    background-color: #FF3C53; }
+  .g__btn-action.--yellow {
+    background-color: #FFBC10; }
+  .g__btn-action.--blue {
+    background-color: #3CADFF; }
+  .g__btn-action.--green {
+    background-color: #3CDAC9; }
+
+.g__actions-grid-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -.7rem; }
+  @media screen and (max-width: 1023px) {
+    .g__actions-grid-box {
+      padding-top: 1rem; } }
+
+.g__actions-grid-item {
+  padding: .2rem; }
 
 @keyframes shadow-pulse {
   0% {
@@ -8867,6 +8899,16 @@ body button:hover, body a:hover {
 
 .s__doctor-login {
   padding-bottom: 2rem; }
+
+.s__doctor-browse-patients .patient__intro {
+  display: flex; }
+
+.s__doctor-browse-patients .patient__avatar-wrapper {
+  margin-right: 1rem; }
+
+.s__doctor-browse-patients .patient__photo-box {
+  width: 5.625rem;
+  height: 5.625rem; }
 
 .c__navigation {
   background-color: #3CDAC9;

@@ -1,0 +1,33 @@
+
+.patient__intro {
+    display: flex;
+}
+
+.patient__avatar-wrapper {
+    margin-right: 1rem;
+}
+
+.patient__photo-box {
+   width: 5.625rem;
+   height: 5.625rem;
+}
+
+@include phone-until{
+
+}
+
+@include from($tablet) {
+
+}
+
+@include until($desktop) {
+
+}
+
+@include from($desktop) {
+
+}
+
+@include from($fullhd) {
+
+}
