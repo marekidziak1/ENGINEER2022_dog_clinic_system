@@ -120,6 +120,62 @@
   min-width: 11.875rem;
 }
 
+.g__row-box {
+  border: 1px solid $pure_black;
+  padding: 1rem;
+  border-radius: 4px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+
+  &-content {
+    margin: -2rem;
+
+    @include until($desktop) {
+      margin: -.75rem;
+    }
+  }
+
+  &-column {
+    padding: 2rem;
+
+    @include until($desktop) {
+      padding: .75rem;
+    }
+  }
+
+  &-header {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $main_color;
+
+    @include until($desktop) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &-subheader {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+
+    @include until($desktop) {
+      font-size: 1.15rem;
+      margin-bottom: .3rem;
+    }
+  }
+
+  &-desc {
+    font-size: 1rem;
+  }
+
+  &-date {
+    font-size: 1.25rem;
+  }
+}
+
 
 @include phone-until{
   

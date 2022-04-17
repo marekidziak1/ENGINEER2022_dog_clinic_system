@@ -8498,6 +8498,43 @@ body button:hover, body a:hover {
   border-radius: 5px;
   min-width: 11.875rem; }
 
+.g__row-box {
+  border: 1px solid #000000;
+  padding: 1rem;
+  border-radius: 4px; }
+  .g__row-box:not(:last-of-type) {
+    margin-bottom: 1rem; }
+  .g__row-box-content {
+    margin: -2rem; }
+    @media screen and (max-width: 1023px) {
+      .g__row-box-content {
+        margin: -.75rem; } }
+  .g__row-box-column {
+    padding: 2rem; }
+    @media screen and (max-width: 1023px) {
+      .g__row-box-column {
+        padding: .75rem; } }
+  .g__row-box-header {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #3CDAC9; }
+    @media screen and (max-width: 1023px) {
+      .g__row-box-header {
+        font-size: 1.4rem; } }
+  .g__row-box-subheader {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem; }
+    @media screen and (max-width: 1023px) {
+      .g__row-box-subheader {
+        font-size: 1.15rem;
+        margin-bottom: .3rem; } }
+  .g__row-box-desc {
+    font-size: 1rem; }
+  .g__row-box-date {
+    font-size: 1.25rem; }
+
 @keyframes shadow-pulse {
   0% {
     box-shadow: 0 0 0 0px rgba(60, 218, 201, 0.3); }
@@ -8818,6 +8855,15 @@ body button:hover, body a:hover {
   @media screen and (max-width: 1023px) {
     .s__doctors .doctor__item-name {
       font-size: 1.2rem; } }
+
+.s__diseases {
+  padding-bottom: 3rem; }
+
+.s__medicines {
+  padding-bottom: 3rem; }
+
+.s__visits {
+  padding-bottom: 3rem; }
 
 .c__navigation {
   background-color: #3CDAC9;

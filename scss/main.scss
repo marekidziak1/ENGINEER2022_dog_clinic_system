@@ -50,6 +50,15 @@ $gap: 32px;
 .s__doctors {
     @import 'pages/doctors/doctors';
 }
+.s__diseases {
+    @import 'pages/diseases/diseases';
+}
+.s__medicines {
+    @import 'pages/medicines/medicines';
+}
+.s__visits {
+    @import 'pages/visits/visits';
+}
 
 // components 
 .c__navigation {
