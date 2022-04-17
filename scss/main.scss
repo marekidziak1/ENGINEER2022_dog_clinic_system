@@ -71,6 +71,12 @@ $gap: 32px;
 .s__doctor-browse-patients {
     @import 'pages/doctor_browse_patients/doctor_browse_patients';
 }
+.s__add-diagnosis {
+    @import 'pages/add_diagnosis/add_diagnosis';
+}
+.s__visits-history {
+    @import 'pages/visits_history/visits_history';
+}
 
 
 
