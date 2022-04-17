@@ -59,6 +59,11 @@ $gap: 32px;
 .s__visits {
     @import 'pages/visits/visits';
 }
+.s__doctor-login {
+    @import 'pages/doctor_login/doctor_login';
+}
+
+
 
 // components 
 .c__navigation {

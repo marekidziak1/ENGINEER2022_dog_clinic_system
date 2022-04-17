@@ -8865,6 +8865,9 @@ body button:hover, body a:hover {
 .s__visits {
   padding-bottom: 3rem; }
 
+.s__doctor-login {
+  padding-bottom: 2rem; }
+
 .c__navigation {
   background-color: #3CDAC9;
   position: fixed;
