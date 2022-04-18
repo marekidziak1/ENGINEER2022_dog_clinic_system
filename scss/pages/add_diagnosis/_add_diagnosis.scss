@@ -1,3 +1,58 @@
+& {
+    padding-bottom: 2rem;
+}
+
+.add__diagnosis {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @include until($desktop) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-form-box {
+        @include from($desktop) {
+            padding-right: 1rem;
+            width: 50%;
+        }
+    }
+
+    &-patient-info-box {
+        @include from($desktop) {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    &-patient-intro-text-wrapper {
+        margin-right: 2rem;
+    }
+
+    &-form-label {
+        font-weight: 700;
+        margin-bottom: .4rem;
+        display: block;
+    }
+
+    &-form-row {
+        margin-bottom: 1rem;
+    }
+}
+
+.g__patient-text-row {
+    font-size: 20px;
+}
+
+.g__patient-intro {
+    @include until($desktop) {
+        flex-direction: column-reverse;
+    }
+}
+
 @include phone-until{
 
 }

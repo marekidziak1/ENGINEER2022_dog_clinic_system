@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#3CDAC9" />
     <title>Dog clinic</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../css/main.css">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+
     <!-- global scripts -->
     <script src="../../js/global_functions.js"></script>
     <script src="../../js/global_main.js"></script>
     <!-- end global scripts -->
-    
-    <!-- here scripts for only single page -->
 
+    <!-- here scripts for only single page -->
+    <link rel="stylesheet" href="../../plugins/sementic_ui/dropdown.min.css">
+    <link rel="stylesheet" href="../../plugins/sementic_ui/transition.min.css">
+    <script src="../../plugins/sementic_ui/dropdown.min.js"></script>
+    <script src="../../plugins/sementic_ui/form.min.js"></script>
+    <script src="../../plugins/sementic_ui/transition.min.js"></script>
+    <script src="../../js/add_diagnosis/add_diagnosis.js"></script>
     <!-- end scripts for only single page -->
 </head>
 <body>
@@ -78,8 +85,69 @@
                         <div class="g__head">
                             <h1 class="g__title has-text-centered">Dodawanie diagnozy</h1>
                         </div>
-                        <div class="add__diagnosis-container">
-                            tttttttt
+                        <div class="l-container-small add__diagnosis-container">
+                            <div class="add__diagnosis-wrapper">
+                                <div class="add__diagnosis-form-box">
+                                    <form action="" class="add__diagnosis-form">
+                                        <div class="add__diagnosis-form-row">
+                                            <label class="add__diagnosis-form-label">Uwagi pacjenta do wizyty:</label>
+                                            <textarea class="textarea"></textarea>
+                                        </div>
+                                        <div class="add__diagnosis-form-row">
+                                            <label class="add__diagnosis-form-label">Objawy (diagnoza):</label>
+                                            <textarea class="textarea"></textarea>
+                                        </div>
+                                        <div class="add__diagnosis-form-row">
+                                            <label class="add__diagnosis-form-label">Choroby:</label>
+                                            <select id="js-select-diseases" name="diseases" multiple="" class="ui fluid dropdown search selection">
+                                            </select>
+                                        </div>
+                                        <div class="add__diagnosis-form-row">
+                                            <label class="add__diagnosis-form-label">Leki:</label>
+                                            <select id="js-select-medicines" name="medicines" multiple="" class="ui fluid dropdown">
+                                                <option value="lek1">Lek 1</option>
+                                                <option value="lek2">Lek 2</option>
+                                                <option value="lek3">Lek 3</option>
+                                                <option value="lek4">Lek 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="add__diagnosis-form-row">
+                                            <label class="add__diagnosis-form-label">Uwagi:</label>
+                                            <textarea class="textarea"></textarea>
+                                        </div>
+                                        <div class="add__diagnosis-form-row has-text-right">
+                                            <button class="g__btn">Zapisz</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="add__diagnosis-patient-info-box">
+                                    <div class="g__patient-intro">
+                                        <div class="g__patient-text-wrapper add__diagnosis-patient-intro-text-wrapper">
+                                            <div class="g__patient-text-row">
+                                                <span class="g__patient-text-label">Imię:</span>
+                                                <span class="g__patient-text-value">Alex</span>
+                                            </div>
+                                            <div class="g__patient-text-row">
+                                                <span class="g__patient-text-label">Rasa:</span>
+                                                <span class="g__patient-text-value">Mieszaniec</span>
+                                            </div>
+                                            <div class="g__patient-text-row">
+                                                <span class="g__patient-text-label">Data urodzenia:</span>
+                                                <span class="g__patient-text-value">20.12.2016</span>
+                                            </div>
+                                            <div class="g__patient-text-row">
+                                                <span class="g__patient-text-label">Właściciel:</span>
+                                                <span class="g__patient-text-value">Jan Kowalski</span>
+                                            </div>
+                                        </div>
+                                        <div class="g__patient-photo-wrapper">
+                                            <div class="g__avatar-box patient__photo-box">
+                                                <img src="../../assets/svg/dog_avatar.svg" alt="avatar" class="g__avatar-img-no-photo dog__img-no-photo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
