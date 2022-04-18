@@ -8346,7 +8346,7 @@ body {
   color: #000000; }
 
 body button, body a {
-  transition: color .3s ease, background-color .3s ease, border-color .3s ease, opacity .3s ease; }
+  transition: color .3s ease, background-color .3s ease, border-color .3s ease, opacity .3s ease; }
 
 body button:hover, body a:hover {
   opacity: 0.7; }
@@ -8559,13 +8559,37 @@ body button:hover, body a:hover {
 .g__actions-grid-box {
   display: flex;
   flex-wrap: wrap;
-  margin: -.7rem; }
+  margin: -.2rem; }
   @media screen and (max-width: 1023px) {
     .g__actions-grid-box {
       padding-top: 1rem; } }
 
 .g__actions-grid-item {
   padding: .2rem; }
+
+.g__patient-intro {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem; }
+  @media screen and (max-width: 1023px) {
+    .g__patient-intro {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem; } }
+
+@media screen and (min-width: 1024px) {
+  .g__patient-photo-wrapper {
+    margin-right: 2.5rem; } }
+
+.g__patient-text-row {
+  font-size: 1.5rem; }
+  @media screen and (max-width: 1023px) {
+    .g__patient-text-row {
+      font-size: 1rem; } }
+
+.g__patient-text-label {
+  font-weight: 700;
+  margin-right: .5rem; }
 
 @keyframes shadow-pulse {
   0% {
@@ -8900,6 +8924,15 @@ body button:hover, body a:hover {
 .s__doctor-login {
   padding-bottom: 2rem; }
 
+.s__doctor-check-visits {
+  padding-bottom: 2rem; }
+
+.s__doctor-check-visits {
+  padding-bottom: 2rem; }
+
+.s__doctor-browse-patients {
+  padding-bottom: 2rem; }
+
 .s__doctor-browse-patients .patient__intro {
   display: flex; }
 
@@ -8909,6 +8942,15 @@ body button:hover, body a:hover {
 .s__doctor-browse-patients .patient__photo-box {
   width: 5.625rem;
   height: 5.625rem; }
+
+.s__visits-history {
+  padding-bottom: 2rem; }
+
+.s__medicines-history {
+  padding-bottom: 2rem; }
+
+.s__diseases-history {
+  padding-bottom: 2rem; }
 
 .c__navigation {
   background-color: #3CDAC9;
@@ -9441,7 +9483,7 @@ body button:hover, body a:hover {
     transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
     .c__navigation .nav__hamburger-box .hamburger--spin .hamburger-inner::before {
-      transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in; }
+      transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in; }
     .c__navigation .nav__hamburger-box .hamburger--spin .hamburger-inner::after {
       transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
   .c__navigation .nav__hamburger-box .hamburger--spin.is-active .hamburger-inner {
@@ -9451,7 +9493,7 @@ body button:hover, body a:hover {
     .c__navigation .nav__hamburger-box .hamburger--spin.is-active .hamburger-inner::before {
       top: 0;
       opacity: 0;
-      transition: top 0.1s ease-out, opacity 0.1s 0.14s ease-out; }
+      transition: top 0.1s ease-out, opacity 0.1s 0.14s ease-out; }
     .c__navigation .nav__hamburger-box .hamburger--spin.is-active .hamburger-inner::after {
       bottom: 0;
       transform: rotate(-90deg);
@@ -9460,7 +9502,7 @@ body button:hover, body a:hover {
     transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
     .c__navigation .nav__hamburger-box .hamburger--spin-r .hamburger-inner::before {
-      transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in; }
+      transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in; }
     .c__navigation .nav__hamburger-box .hamburger--spin-r .hamburger-inner::after {
       transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
   .c__navigation .nav__hamburger-box .hamburger--spin-r.is-active .hamburger-inner {
@@ -9470,7 +9512,7 @@ body button:hover, body a:hover {
     .c__navigation .nav__hamburger-box .hamburger--spin-r.is-active .hamburger-inner::before {
       top: 0;
       opacity: 0;
-      transition: top 0.1s ease-out, opacity 0.1s 0.14s ease-out; }
+      transition: top 0.1s ease-out, opacity 0.1s 0.14s ease-out; }
     .c__navigation .nav__hamburger-box .hamburger--spin-r.is-active .hamburger-inner::after {
       bottom: 0;
       transform: rotate(90deg);
@@ -9479,7 +9521,7 @@ body button:hover, body a:hover {
     transition-duration: 0.1s;
     transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
     .c__navigation .nav__hamburger-box .hamburger--squeeze .hamburger-inner::before {
-      transition: top 0.1s 0.14s ease, opacity 0.1s ease; }
+      transition: top 0.1s 0.14s ease, opacity 0.1s ease; }
     .c__navigation .nav__hamburger-box .hamburger--squeeze .hamburger-inner::after {
       transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
   .c__navigation .nav__hamburger-box .hamburger--squeeze.is-active .hamburger-inner {
@@ -9489,7 +9531,7 @@ body button:hover, body a:hover {
     .c__navigation .nav__hamburger-box .hamburger--squeeze.is-active .hamburger-inner::before {
       top: 0;
       opacity: 0;
-      transition: top 0.1s ease, opacity 0.1s 0.14s ease; }
+      transition: top 0.1s ease, opacity 0.1s 0.14s ease; }
     .c__navigation .nav__hamburger-box .hamburger--squeeze.is-active .hamburger-inner::after {
       bottom: 0;
       transform: rotate(-90deg);

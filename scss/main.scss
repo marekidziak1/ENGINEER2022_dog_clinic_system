@@ -77,10 +77,15 @@ $gap: 32px;
 .s__visits-history {
     @import 'pages/visits_history/visits_history';
 }
+.s__medicines-history {
+    @import 'pages/medicines_history/medicines_history';
+}
+.s__diseases-history {
+    @import 'pages/diseases_history/diseases_history';
+}
 
 
-
-// components 
+// components
 .c__navigation {
     @import 'components/_navigation';
 }

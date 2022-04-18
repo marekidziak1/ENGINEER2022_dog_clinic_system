@@ -105,7 +105,7 @@
           right: 0;
       }
       &-no-photo {
-          
+
       }
   }
 }
@@ -184,7 +184,7 @@
   font-size: 1.125rem;
   font-weight: 700;
   border-radius: 5px;
-  width: 14.375rem; 
+  width: 14.375rem;
   max-width: 100%;
   display: inline-flex;
   justify-content: center;
@@ -205,14 +205,14 @@
 
 .g__actions-box {
   button, a {
-   
+
   }
 }
 
 .g__actions-grid-box {
   display: flex;
   flex-wrap: wrap;
-  margin: -.7rem;
+  margin: -.2rem;
 
   @include until($desktop) {
     padding-top: 1rem;
@@ -223,25 +223,58 @@
   padding: .2rem;
 }
 
+.g__patient {
+  &-intro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+
+    @include until($desktop) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-photo-wrapper {
+
+    @include from($desktop) {
+      margin-right: 2.5rem;
+    }
+  }
+
+  &-text-row {
+    font-size: 1.5rem;
+
+    @include until($desktop) {
+      font-size: 1rem;
+    }
+  }
+
+  &-text-label {
+    font-weight: 700;
+    margin-right: .5rem;
+  }
+}
 
 @include phone-until{
-  
+
 }
 
 @include from($tablet) {
-  
+
 }
 
 @include until($desktop) {
-  
+
 }
 
 @include from($desktop) {
-  
+
 }
 
 @include from($fullhd) {
-  
+
 }
 
 @keyframes shadow-pulse{
