@@ -1,0 +1,70 @@
+& {
+    min-height: 31.25rem;
+    background-color: green;
+    padding: 1rem;
+    padding-top: 3rem;
+    background-color: $gray_primary;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    color: $pure_white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include until($desktop) {
+        min-height: 14rem;
+        padding-top: 0rem;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        opacity: .3;
+        z-index: 0;
+    }
+}
+
+.intro {
+    &__content {
+        padding-top: 4rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        text-shadow: 1px 1px 13px black;
+
+        @include until($desktop) {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@include phone-until{
+
+}
+
+@include from($tablet) {
+
+}
+
+@include until($desktop) {
+
+}
+
+@include from($desktop) {
+
+}
+
+@include from($fullhd) {
+
+}

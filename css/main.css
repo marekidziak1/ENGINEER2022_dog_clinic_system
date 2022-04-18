@@ -11029,7 +11029,7 @@ body button:hover, body a:hover {
 
 .s__contact {
   min-height: 100vh;
-  background-image: url("../assets/img/contact_bg_img.png");
+  background-image: url("../assets/img/contact_bg_img.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 6rem;
@@ -12108,3 +12108,45 @@ body button:hover, body a:hover {
   @media screen and (max-width: 1023px) {
     .c__breadcrumb {
       padding-top: 4rem; } }
+
+.c__intro {
+  min-height: 31.25rem;
+  background-color: green;
+  padding: 1rem;
+  padding-top: 3rem;
+  background-color: #666666;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (max-width: 1023px) {
+    .c__intro {
+      min-height: 14rem;
+      padding-top: 0rem; } }
+  .c__intro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: .3;
+    z-index: 0; }
+
+.c__intro .intro__content {
+  padding-top: 4rem;
+  position: relative;
+  z-index: 1; }
+
+.c__intro .intro__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 13px black; }
+  @media screen and (max-width: 1023px) {
+    .c__intro .intro__title {
+      font-size: 1.6rem; } }
