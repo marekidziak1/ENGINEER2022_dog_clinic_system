@@ -294,3 +294,18 @@
     box-shadow: 0 0 0 35px rgba($pure_white, 0);
   }
 }
+
+@keyframes slide-in-from-right {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }   
+}
+
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}

@@ -35,9 +35,9 @@ html{
 }
 // z-index
 $z-index: (
-  nav_top: 300,
+  nav_top: 30000,
   menu_mobile: 400,
-  hamburger: 500,
+  hamburger: 50000,
 );
 
 @function z-index($key) {

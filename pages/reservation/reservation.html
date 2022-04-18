@@ -19,6 +19,8 @@
     <!-- end global scripts -->
 
     <!-- here scripts for only single page -->
+    <link rel="stylesheet" href="../../plugins/calendar_appointment_booking/css/mobiscroll.jquery.min.css">
+    <script src="../../plugins/calendar_appointment_booking/js/mobiscroll.jquery.min.js"></script>
     <script src="../../js/reservation/reservation.js"></script>
     <!-- end scripts for only single page -->
 </head>
@@ -121,9 +123,15 @@
                                         Wybierz dzień i godzinę wizyty
                                     </div>
                                     <div class="reservation__step-calendar-wrapper">
-                                       << HERE CALENDAR >>
-                                       <br>
-                                       <input type="date" name="" id="">
+                                       <div mbsc-page class="demo-appointment-booking">
+                                        <div style="width:100%;height:100%">
+                                            <div class="md-calendar-booking">
+                                              <div class="mbsc-form-group">
+                                                  <div id="demo-booking-datetime" class="booking-datetime"></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="reservation__submit-box">

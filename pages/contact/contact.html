@@ -19,7 +19,9 @@
     <!-- end global scripts -->
 
     <!-- here scripts for only single page -->
-
+    <link rel="stylesheet" href="../../plugins/leaflet/leaflet.css">
+    <script src="../../plugins/leaflet/leaflet.js"></script>
+    <script src="../../js/contact/contact.js"></script>
     <!-- end scripts for only single page -->
 </head>
 <body>
@@ -87,25 +89,26 @@
                               </h1>
                             </div>
                             <div class="contact__content-box">
-                                <div class="contact__content-icon">
+                                <div class="contact__content-icon animated pulse">
                                     <img src="../../assets/svg/location.svg" alt="location">
                                 </div>
-                                <div class="contact__content-text">
+                                <div class="contact__content-text animated slideInRight">
                                     ul. Nowa 100 <br>
                                     00-000 Warszawa
                                 </div>
                             </div>
                             <div class="contact__content-box">
-                                <div class="contact__content-icon">
+                                <div class="contact__content-icon animated wobble">
                                     <img src="../../assets/svg/phone-call.svg" alt="phone">
                                 </div>
-                                <div class="contact__content-text">
+                                <div class="contact__content-text animated slideInRight">
                                     Tel: <a href="tel:1234-567-890">1234-567-890</a>
                                     <br>
                                     <br>
                                     Email: <a href="mailto:test@test.pl">test@test.pl</a>
                                 </div>
                             </div>
+                            <div class="contact__map"id="map"></div>
                         </div>
                     </div>
                 </section>

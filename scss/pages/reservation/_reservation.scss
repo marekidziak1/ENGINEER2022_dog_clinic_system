@@ -44,6 +44,10 @@
     text-align: center;
 }
 
+.mbsc-datepicker-tab-wrapper, .mbsc-datepicker-tab {
+    width: 100%;
+}
+
 @include phone-until{
 
 }
