@@ -12,12 +12,13 @@
 }
 
 .l-container-big{
-	max-width: 1720px;
+	max-width: 1260px;
 	margin: 0px auto;
-	padding: 0 1rem;
+	padding: 0 2rem;
 
 	@include until($desktop) {
 		max-width: 600px;
+		padding: 0 1rem;
 	}
 }
 
