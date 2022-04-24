@@ -44,8 +44,78 @@
     text-align: center;
 }
 
-.mbsc-datepicker-tab-wrapper, .mbsc-datepicker-tab {
-    width: 100%;
+.terms__slider-wrapper {
+    position: relative;
+    padding: 0 3rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.terms__slider-arrow {
+    font-size: 2.5rem;
+    position: absolute;
+
+    @include until($desktop) {
+        font-size: 1.8rem;
+    }
+
+    &.--prev {
+        top: 0;
+        left: 0;
+    }
+    &.--next {
+        top: 0;
+        right: 0;
+    }
+
+    &.swiper-button-disabled {
+        color: $gray_light;
+    }
+}
+
+.term__item {
+    text-align: center;
+    padding: 0 .5rem;
+
+    &-date {
+        font-size: .75rem;
+        color: $gray_primary;
+    }
+
+    &-header {
+        margin-bottom: .6rem;
+    }
+}
+
+.term__hour-item {
+    margin-bottom: .5rem;
+
+    &-btn {
+        background-color: $main_color;
+        border: 1px solid $main_color;
+        border-radius: 4px;
+        padding: .1rem .3rem;
+
+        &.--reserved {
+            background-color: $gray_light;
+            border: 1px solid $gray_light;
+            pointer-events: none;
+            text-decoration: line-through;
+        }
+        &.--active {
+            &:hover {
+                border: 1px solid $pure_black;
+            }
+        }
+
+        &.--selected {
+            border: 1px solid yellow;
+        }
+    }
+}
+
+.terms__container {
+    margin-bottom: 2.5rem;
 }
 
 @include phone-until{

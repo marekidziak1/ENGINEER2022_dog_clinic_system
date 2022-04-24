@@ -11275,8 +11275,55 @@ body button:hover, body a:hover {
 .s__reservation .reservation__submit-box {
   text-align: center; }
 
-.s__reservation .mbsc-datepicker-tab-wrapper, .s__reservation .mbsc-datepicker-tab {
-  width: 100%; }
+.s__reservation .terms__slider-wrapper {
+  position: relative;
+  padding: 0 3rem;
+  max-width: 40rem;
+  margin: 0 auto; }
+
+.s__reservation .terms__slider-arrow {
+  font-size: 2.5rem;
+  position: absolute; }
+  @media screen and (max-width: 1023px) {
+    .s__reservation .terms__slider-arrow {
+      font-size: 1.8rem; } }
+  .s__reservation .terms__slider-arrow.--prev {
+    top: 0;
+    left: 0; }
+  .s__reservation .terms__slider-arrow.--next {
+    top: 0;
+    right: 0; }
+  .s__reservation .terms__slider-arrow.swiper-button-disabled {
+    color: #f3f3f3; }
+
+.s__reservation .term__item {
+  text-align: center;
+  padding: 0 .5rem; }
+  .s__reservation .term__item-date {
+    font-size: .75rem;
+    color: #666666; }
+  .s__reservation .term__item-header {
+    margin-bottom: .6rem; }
+
+.s__reservation .term__hour-item {
+  margin-bottom: .5rem; }
+  .s__reservation .term__hour-item-btn {
+    background-color: #3CDAC9;
+    border: 1px solid #3CDAC9;
+    border-radius: 4px;
+    padding: .1rem .3rem; }
+    .s__reservation .term__hour-item-btn.--reserved {
+      background-color: #f3f3f3;
+      border: 1px solid #f3f3f3;
+      pointer-events: none;
+      text-decoration: line-through; }
+    .s__reservation .term__hour-item-btn.--active:hover {
+      border: 1px solid #000000; }
+    .s__reservation .term__hour-item-btn.--selected {
+      border: 1px solid yellow; }
+
+.s__reservation .terms__container {
+  margin-bottom: 2.5rem; }
 
 .s__doctors {
   padding-bottom: 2rem; }
