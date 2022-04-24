@@ -10994,10 +10994,10 @@ body button:hover, body a:hover {
 
 .s__home-main .home-main__content {
   background-color: #3CDAC9;
-  width: 36.25rem;
+  width: 30rem;
   max-width: 100%;
   border-radius: 5px;
-  padding: 4rem 2rem;
+  padding: 2.5rem 2rem;
   box-shadow: 0 1px 18px 0px #00000055; }
   @media screen and (max-width: 1023px) {
     .s__home-main .home-main__content {
@@ -11009,8 +11009,9 @@ body button:hover, body a:hover {
 
 .s__home-main .home-main__content-header {
   font-size: 2.75rem;
-  font-weight: 700;
-  position: relative; }
+  font-weight: 900;
+  position: relative;
+  text-align: center; }
   @media screen and (max-width: 1023px) {
     .s__home-main .home-main__content-header {
       font-size: 1.5rem; } }
@@ -11019,7 +11020,8 @@ body button:hover, body a:hover {
   font-size: 1.875rem;
   font-weight: 700;
   margin-top: 2rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  text-align: center; }
   @media screen and (max-width: 1023px) {
     .s__home-main .home-main__content-text {
       font-size: 1.2rem; } }
@@ -11056,12 +11058,14 @@ body button:hover, body a:hover {
   @media screen and (max-width: 1023px) {
     .s__contact .contact__content-box {
       padding: 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .s__contact .contact__content-box {
+      width: 80%; } }
 
 .s__contact .contact__container {
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: flex-end; }
+  align-items: center; }
 
 .s__contact .contact__content-header {
   font-size: 2.75rem;
@@ -11074,7 +11078,7 @@ body button:hover, body a:hover {
 .s__contact .contact__content-text {
   font-size: 1.25rem;
   font-weight: 700;
-  line-height: 1.2; }
+  line-height: 1.4; }
   @media screen and (max-width: 1023px) {
     .s__contact .contact__content-text {
       font-size: 1.2rem; } }
@@ -11084,7 +11088,7 @@ body button:hover, body a:hover {
   background-color: #000000; }
 
 .s__contact .contact__content-icon {
-  width: 16%;
+  width: 13%;
   padding-right: 1rem; }
   @media screen and (max-width: 1023px) {
     .s__contact .contact__content-icon {
@@ -11327,8 +11331,20 @@ body button:hover, body a:hover {
   margin-right: 1rem; }
 
 .s__doctor-browse-patients .patient__photo-box {
-  width: 5.625rem;
-  height: 5.625rem; }
+  width: 11rem;
+  height: 11rem; }
+
+.s__doctor-browse-patients .patient__data-row {
+  font-size: 1.25rem;
+  display: flex; }
+
+.s__doctor-browse-patients .patient__data-label {
+  font-weight: 700;
+  width: 50%;
+  padding-right: 1rem; }
+
+.s__doctor-browse-patients .patient__data-value {
+  width: 50%; }
 
 .s__add-diagnosis {
   padding-bottom: 2rem; }
@@ -11378,6 +11394,34 @@ body button:hover, body a:hover {
 
 .s__diseases-history {
   padding-bottom: 2rem; }
+
+.s__single-doctor {
+  padding-bottom: 2rem; }
+
+.s__single-doctor .doctor__head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem; }
+
+.s__single-doctor .doctor__photo-box {
+  margin-bottom: 0;
+  margin-right: 2rem; }
+
+.s__single-doctor .doctor__photo-wrapper {
+  width: 50%; }
+
+.s__single-doctor .doctor__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 50%; }
+  @media screen and (max-width: 1023px) {
+    .s__single-doctor .doctor__name {
+      font-size: 1.2rem; } }
+
+.s__single-doctor .doctor__container {
+  max-width: 48rem;
+  margin: 0 auto; }
 
 .c__navigation {
   background-color: #3CDAC9;

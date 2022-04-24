@@ -89,57 +89,59 @@
                             <h1 class="g__title">Zarezerwuj wizytę</h1>
                         </div>
                         <div class="l-container-small">
-                            <div class="reservation__steps-container">
-                                <div class="reservation__step reservation__step-1">
-                                    <div class="reservation__step-details is-multiline columns">
-                                        <div class="reservation__step-details-left column is-6-desktop is-full-touch">
-                                            <div class="reservation__form-row">
-                                                <label class="reservation__form-label">Wybierz psa:</label>
-                                                <div class="reservation__form-select select is-fullwidth">
-                                                    <select>
-                                                        <option>Alex</option>
-                                                        <option>Bruno</option>
-                                                    </select>
+                            <form action="" class="reservation__form">
+                                <div class="reservation__steps-container">
+                                    <div class="reservation__step reservation__step-1">
+                                        <div class="reservation__step-details is-multiline columns">
+                                            <div class="reservation__step-details-left column is-6-desktop is-full-touch">
+                                                <div class="reservation__form-row">
+                                                    <label class="reservation__form-label">Wybierz psa:</label>
+                                                    <div class="reservation__form-select select is-fullwidth">
+                                                        <select>
+                                                            <option>Alex</option>
+                                                            <option>Bruno</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="reservation__form-row">
+                                                    <label class="reservation__form-label">Wybierz lekarza:</label>
+                                                    <div class="reservation__form-select select is-fullwidth">
+                                                        <select>
+                                                            <option>Jan Kowalski</option>
+                                                            <option>Jan Nowak</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="reservation__form-row">
-                                                <label class="reservation__form-label">Wybierz lekarza:</label>
-                                                <div class="reservation__form-select select is-fullwidth">
-                                                    <select>
-                                                        <option>Jan Kowalski</option>
-                                                        <option>Jan Nowak</option>
-                                                    </select>
+                                            <div class="reservation__step-details-right column is-6-desktop is-full-touch">
+                                                <div class="reservation__form-row">
+                                                    <label class="reservation__form-label">Uwagi dla lekarza:</label>
+                                                    <textarea class="textarea"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="reservation__step-details-right column is-6-desktop is-full-touch">
-                                            <div class="reservation__form-row">
-                                                <label class="reservation__form-label">Uwagi dla lekarza:</label>
-                                                <textarea class="textarea"></textarea>
+                                    </div>
+                                    <div class="reservation__step reservation__step-2">
+                                        <div class="reservation__step-header">
+                                            Wybierz dzień i godzinę wizyty
+                                        </div>
+                                        <div class="reservation__step-calendar-wrapper">
+                                        <div mbsc-page class="demo-appointment-booking">
+                                            <div style="width:100%;height:100%">
+                                                <div class="md-calendar-booking">
+                                                <div class="mbsc-form-group">
+                                                    <div id="demo-booking-datetime" class="booking-datetime"></div>
+                                                </div>
+                                            </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="reservation__step reservation__step-2">
-                                    <div class="reservation__step-header">
-                                        Wybierz dzień i godzinę wizyty
-                                    </div>
-                                    <div class="reservation__step-calendar-wrapper">
-                                       <div mbsc-page class="demo-appointment-booking">
-                                        <div style="width:100%;height:100%">
-                                            <div class="md-calendar-booking">
-                                              <div class="mbsc-form-group">
-                                                  <div id="demo-booking-datetime" class="booking-datetime"></div>
-                                              </div>
-                                          </div>
                                         </div>
-                                      </div>
+                                    </div>
+                                    <div class="reservation__submit-box">
+                                        <button class="g__btn">Zarezerwuj</button>
                                     </div>
                                 </div>
-                                <div class="reservation__submit-box">
-                                    <button class="g__btn">Zarezerwuj</button>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </section>

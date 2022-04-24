@@ -11,10 +11,26 @@
 }
 
 .patient__photo-box {
-   width: 5.625rem;
-   height: 5.625rem;
+   width: 11rem;
+   height: 11rem;
 }
 
+.patient__data {
+    &-row {
+        font-size: 1.25rem;
+        display: flex;
+    }
+
+    &-label {
+        font-weight: 700;
+        width: 50%;
+        padding-right: 1rem;
+    }
+
+    &-value {
+        width: 50%;
+    }
+}
 @include phone-until{
 
 }
