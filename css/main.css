@@ -11152,11 +11152,6 @@ body button:hover, body a:hover {
     .s__your-dogs .dogs__btn-icon i {
       font-size: 1rem; } }
 
-.s__your-dogs .dogs__container {
-  background-color: #f3f3f3;
-  min-height: 100vh;
-  padding: 2rem .5rem; }
-
 .s__your-dogs .dogs__list {
   margin: -.1rem; }
 
@@ -11175,40 +11170,37 @@ body button:hover, body a:hover {
       .s__your-dogs .dogs__item-name {
         font-size: 1.2rem; } }
 
-.s__your-dog {
-  padding-bottom: 2rem; }
-
-.s__your-dog .dog__container {
+.s__your-dogs .dog__container {
   background-color: #f3f3f3;
   padding: 2rem; }
 
-.s__your-dog .dog__btn-back {
+.s__your-dogs .dog__btn-back {
   background-color: #000000;
   color: #ffffff;
   font-size: 1.25rem;
   padding: .5rem 1.5rem;
   display: inline-flex;
   border-radius: 4px; }
-  .s__your-dog .dog__btn-back i {
+  .s__your-dogs .dog__btn-back i {
     margin-right: .5rem;
     font-size: 1.3rem; }
 
-.s__your-dog .dog__back {
+.s__your-dogs .dog__back {
   margin-bottom: 1.4rem; }
 
-.s__your-dog .dog__avatar {
+.s__your-dogs .dog__avatar {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-.s__your-dog .dog__bottom {
+.s__your-dogs .dog__bottom {
   text-align: right; }
 
-.s__your-dog .dog__actions {
+.s__your-dogs .dog__actions {
   align-self: center;
   display: flex;
   justify-content: center; }
-  .s__your-dog .dog__actions-link {
+  .s__your-dogs .dog__actions-link {
     display: inline-flex;
     color: #ffffff;
     font-weight: 500;
@@ -11218,19 +11210,19 @@ body button:hover, body a:hover {
     justify-content: center;
     border-radius: 5px;
     min-width: 14rem; }
-    .s__your-dog .dog__actions-link:not(:last-of-type) {
+    .s__your-dogs .dog__actions-link:not(:last-of-type) {
       margin-bottom: 1rem; }
-    .s__your-dog .dog__actions-link.--red {
+    .s__your-dogs .dog__actions-link.--red {
       background-color: #FF3C53; }
-    .s__your-dog .dog__actions-link.--blue {
+    .s__your-dogs .dog__actions-link.--blue {
       background-color: #3CADFF; }
-    .s__your-dog .dog__actions-link.--yellow {
+    .s__your-dogs .dog__actions-link.--yellow {
       background-color: #FFBC10; }
-    .s__your-dog .dog__actions-link i {
+    .s__your-dogs .dog__actions-link i {
       margin-left: .6rem;
       font-size: 1.5rem;
       line-height: 1.1; }
-  .s__your-dog .dog__actions-btns-wrapper {
+  .s__your-dogs .dog__actions-btns-wrapper {
     display: inline-flex;
     flex-direction: column; }
 
