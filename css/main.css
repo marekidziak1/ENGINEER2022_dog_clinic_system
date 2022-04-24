@@ -12151,7 +12151,6 @@ body button:hover, body a:hover {
 
 .c__intro {
   min-height: 22.25rem;
-  background-color: green;
   padding: 1rem;
   padding-top: 2rem;
   background-color: #666666;
@@ -12189,4 +12188,45 @@ body button:hover, body a:hover {
   text-shadow: 1px 1px 13px black; }
   @media screen and (max-width: 1023px) {
     .c__intro .intro__title {
+      font-size: 1.6rem; } }
+
+.c__parallax {
+  min-height: 22.25rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  background-color: #666666;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (max-width: 1023px) {
+    .c__parallax {
+      min-height: 10rem;
+      padding-top: 0rem; } }
+  .c__parallax::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: .3;
+    z-index: 0; }
+
+.c__parallax .intro__content {
+  padding-top: 4rem;
+  position: relative;
+  z-index: 1; }
+
+.c__parallax .intro__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 13px black; }
+  @media screen and (max-width: 1023px) {
+    .c__parallax .intro__title {
       font-size: 1.6rem; } }

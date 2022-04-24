@@ -13,7 +13,7 @@
     align-items: center;
 
     @include until($desktop) {
-        min-height: 14rem;
+        min-height: 10rem;
         padding-top: 0rem;
     }
 
