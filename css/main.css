@@ -11320,10 +11320,16 @@ body button:hover, body a:hover {
     .s__reservation .term__hour-item-btn.--active:hover {
       border: 1px solid #000000; }
     .s__reservation .term__hour-item-btn.--selected {
-      border: 1px solid yellow; }
+      border: 1px solid #000000;
+      background-color: #00a391;
+      color: #ffffff; }
 
 .s__reservation .terms__container {
   margin-bottom: 2.5rem; }
+
+.s__reservation .term__input {
+  text-align: center;
+  font-weight: 800; }
 
 .s__doctors {
   padding-bottom: 2rem; }

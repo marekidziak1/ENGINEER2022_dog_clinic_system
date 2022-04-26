@@ -109,13 +109,20 @@
         }
 
         &.--selected {
-            border: 1px solid yellow;
+            border: 1px solid $pure_black;
+            background-color: #00a391;
+            color: $pure_white;
         }
     }
 }
 
 .terms__container {
     margin-bottom: 2.5rem;
+}
+
+.term__input {
+    text-align: center;
+    font-weight: 800;
 }
 
 @include phone-until{

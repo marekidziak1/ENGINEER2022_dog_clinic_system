@@ -32,5 +32,14 @@ $(document).ready(function(){
                 //spaceBetween: 30,
             },
         }             
-     });
+    });
+
+    $('.term__hour-item-btn.--active').on('click', function(){
+        $('.term__hour-item-btn').removeClass('--selected');
+        $(this).addClass('--selected');
+        var selectedTerm = $(this).attr("data-content");
+        console.log(selectedTerm);
+
+        $('.js-term-input').val(selectedTerm);
+    });
 });
