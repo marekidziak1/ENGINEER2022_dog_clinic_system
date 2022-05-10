@@ -59,9 +59,10 @@
     }
 
     &-text {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: 700;
         line-height: 1.4;
+        font-family: $font_banner;
 
         @include until($desktop) {
             font-size: 1.2rem;

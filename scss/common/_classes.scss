@@ -1,6 +1,7 @@
 .g__title {
   font-size: 3rem;
   font-weight: 700;
+  font-family: $font_banner;
 
   @include until($desktop) {
     font-size: 1.5rem;

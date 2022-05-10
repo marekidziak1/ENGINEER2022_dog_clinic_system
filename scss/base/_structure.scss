@@ -36,8 +36,11 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	background-color:white; //for mmenu
+	// background-color:white; //for mmenu
 	overflow: hidden;
+	background-image: url('../assets/img/honey_layer_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .l-outside-footer{

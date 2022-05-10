@@ -41,6 +41,7 @@
         font-size: 3rem;
         font-weight: 700;
         text-shadow: 1px 1px 13px black;
+        font-family: $font_banner;
 
         @include until($desktop) {
             font-size: 1.6rem;

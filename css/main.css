@@ -10760,8 +10760,10 @@ body button:hover, body a:hover {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: white;
-  overflow: hidden; }
+  overflow: hidden;
+  background-image: url("../assets/img/honey_layer_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .l-outside-footer {
   flex: 1 0 auto;
@@ -10776,7 +10778,8 @@ body button:hover, body a:hover {
 
 .g__title {
   font-size: 3rem;
-  font-weight: 700; }
+  font-weight: 700;
+  font-family: "Lobster", cursive; }
   @media screen and (max-width: 1023px) {
     .g__title {
       font-size: 1.5rem; } }
@@ -11012,7 +11015,8 @@ body button:hover, body a:hover {
   font-size: 2.75rem;
   font-weight: 900;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  font-family: "Lobster", cursive; }
   @media screen and (max-width: 1023px) {
     .s__home-main .home-main__content-header {
       font-size: 1.5rem; } }
@@ -11077,9 +11081,10 @@ body button:hover, body a:hover {
       font-size: 1.5rem; } }
 
 .s__contact .contact__content-text {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-family: "Lobster", cursive; }
   @media screen and (max-width: 1023px) {
     .s__contact .contact__content-text {
       font-size: 1.2rem; } }
@@ -12239,7 +12244,8 @@ body button:hover, body a:hover {
 .c__intro .intro__title {
   font-size: 3rem;
   font-weight: 700;
-  text-shadow: 1px 1px 13px black; }
+  text-shadow: 1px 1px 13px black;
+  font-family: "Lobster", cursive; }
   @media screen and (max-width: 1023px) {
     .c__intro .intro__title {
       font-size: 1.6rem; } }
