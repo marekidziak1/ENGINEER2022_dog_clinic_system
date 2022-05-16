@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#3CDAC9" />
+    <title>Dog clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- global scripts -->
+    <script src="../../js/global_functions.js"></script>
+    <script src="../../js/global_main.js"></script>
+    <!-- end global scripts -->
+
+    <!-- here scripts for only single page -->
+    <link rel="stylesheet" href="../../plugins/sementic_ui/dropdown.min.css">
+    <link rel="stylesheet" href="../../plugins/sementic_ui/transition.min.css">
+    <script src="../../plugins/sementic_ui/dropdown.min.js"></script>
+    <script src="../../plugins/sementic_ui/form.min.js"></script>
+    <script src="../../plugins/sementic_ui/transition.min.js"></script>
+    <script src="../../js/add_diagnosis/add_diagnosis.js"></script>
+    <!-- end scripts for only single page -->
+</head>
+<body>
+    <div class="l-external-container">
+        <div class="l-main">
+            <main class="l-outside-footer">
+                <nav class="c__navigation js-navigation">
+                    <div class="l-container-big">
+                        <div class="nav__wrapper">
+                            <div class="nav__side-left">
+                                <div class="nav__logo-box">
+                                    <a href="../home/home.html" class="">
+                                        <img src="../../assets/svg/dog-icon.svg" alt="Logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="nav__side-right">
+                                <div class="nav__links-box">
+                                    <div class="nav__link-list">
+                                        <a href="../doctor_check_visits/doctor_check_visits.html" class="nav__link-item">Sprawdź wizyty</a>
+                                        <a href="../doctor_browse_patients/doctor_browse_patients.html" class="nav__link-item">Przeglądaj pacjentów</a>
+                                        <a href="../reservation/reservation.html" class="nav__link-item">Zarezerwuj wizytę dla pacjenta</a>
+                                    </div>
+                                </div>
+                                <div class="nav__account-box">
+                                    <div class="nav__account-links">
+                                        <a href="../doctor_login/doctor_login.html" class="nav__account-link-item">Wyloguj</a>
+                                    </div>
+                                </div>
+                                <div class="nav__mobile-menu-wrapper">
+                                    <div class="nav__mobile-menu-trigger">
+                                        <div class="nav__hamburger-box hamburger-init-hidden">
+                                            <div class="hamburger hamburger--spin js-menu-trigger-mobile hamburger__mobile">
+                                                <div class="hamburger-box">
+                                                    <div class="hamburger-inner"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <aside class="c__menu-mobile js-menu-mobile">
+                                        <div class="menu-mobile__container">
+                                            <div class="menu__page-list">
+                                                <a href="../doctor_check_visits/doctor_check_visits.html" class="menu__page-link">Sprawdź wizyty</a>
+                                                <a href="../doctor_browse_patients/doctor_browse_patients.html" class="menu__page-link">Przeglądaj pacjentów</a>
+                                                <a href="../reservation/reservation.html" class="menu__page-link">Zarezerwuj wizytę dla pacjenta</a>
+                                            </div>
+                                            <div class="menu__account-links">
+                                                <a href="../doctor_login/doctor_login.html" class="menu__page-account-link">Wyloguj</a>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <section class="c__breadcrumb"></section>
+                <section class="s__add-diagnosis">
+                    <div class="l-container-big">
+                        <div class="g__head">
+                            <h1 class="g__title has-text-centered">Dodawanie diagnozy</h1>
+                        </div>
+                        <div class="l-container-small add__diagnosis-container">
+                            <div class="add__diagnosis-wrapper">
+                                <div class="add__diagnosis-form-box">
+                                    <form action="" class="add__diagnosis-form">
+                                        <div class="add__diagnosis-form-row">
+                                            <label class="add__diagnosis-form-label">Uwagi pacjenta do wizyty:</label>
+                                            <textarea class="textarea"></textarea>
+                                        </div>
+                                        <div class="add__diagnosis-form-row">
+                                            <label class="add__diagnosis-form-label">Objawy (diagnoza):</label>
+                                            <textarea class="textarea"></textarea>
+                                        </div>
+                                        <div class="add__diagnosis-form-row">
+                                            <label class="add__diagnosis-form-label">Choroby:</label>
+                                            <select id="js-select-diseases" name="diseases" multiple="" class="ui fluid dropdown search selection">
+                                            </select>
+                                        </div>
+                                        <div class="add__diagnosis-form-row">
+                                            <label class="add__diagnosis-form-label">Leki:</label>
+                                            <select id="js-select-medicines" name="medicines" multiple="" class="ui fluid dropdown">
+                                                <option value="lek1">Lek 1</option>
+                                                <option value="lek2">Lek 2</option>
+                                                <option value="lek3">Lek 3</option>
+                                                <option value="lek4">Lek 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="add__diagnosis-form-row">
+                                            <label class="add__diagnosis-form-label">Uwagi:</label>
+                                            <textarea class="textarea"></textarea>
+                                        </div>
+                                        <div class="add__diagnosis-form-row has-text-right">
+                                            <button class="g__btn">Zapisz</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="add__diagnosis-patient-info-box">
+                                    <div class="g__patient-intro">
+                                        <div class="g__patient-text-wrapper add__diagnosis-patient-intro-text-wrapper">
+                                            <div class="g__patient-text-row">
+                                                <span class="g__patient-text-label">Imię:</span>
+                                                <span class="g__patient-text-value">Alex</span>
+                                            </div>
+                                            <div class="g__patient-text-row">
+                                                <span class="g__patient-text-label">Rasa:</span>
+                                                <span class="g__patient-text-value">Mieszaniec</span>
+                                            </div>
+                                            <div class="g__patient-text-row">
+                                                <span class="g__patient-text-label">Data urodzenia:</span>
+                                                <span class="g__patient-text-value">20.12.2016</span>
+                                            </div>
+                                            <div class="g__patient-text-row">
+                                                <span class="g__patient-text-label">Właściciel:</span>
+                                                <span class="g__patient-text-value">Jan Kowalski</span>
+                                            </div>
+                                        </div>
+                                        <div class="g__patient-photo-wrapper">
+                                            <div class="g__avatar-box patient__photo-box">
+                                                <img src="../../assets/svg/dog_avatar.svg" alt="avatar" class="g__avatar-img-no-photo dog__img-no-photo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="l-footer-fixed">
+                <div class="c__footer">
+                    <div class="l-container-big">
+                        Copyright © 2022 Dog clinic
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

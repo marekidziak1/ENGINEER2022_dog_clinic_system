@@ -1,0 +1,33 @@
+& {
+    padding-bottom: 2rem;
+}
+
+.register__login-info {
+    font-weight: 700; 
+    margin-top: 2.5rem; 
+    font-size: 1.1rem;
+}
+
+.register__login-info-link {
+    color: $main_color;
+}
+
+@include phone-until{
+
+}
+
+@include from($tablet) {
+
+}
+
+@include until($desktop) {
+
+}
+
+@include from($desktop) {
+
+}
+
+@include from($fullhd) {
+
+}

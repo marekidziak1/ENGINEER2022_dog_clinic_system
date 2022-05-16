@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#3CDAC9" />
+    <title>Dog clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- global scripts -->
+    <script src="../../js/global_functions.js"></script>
+    <script src="../../js/global_main.js"></script>
+    <!-- end global scripts -->
+
+    <!-- here scripts for only single page -->
+    <link rel="stylesheet" href="../../plugins/leaflet/leaflet.css">
+    <script src="../../plugins/leaflet/leaflet.js"></script>
+    <script src="../../js/contact/contact.js"></script>
+    <!-- end scripts for only single page -->
+</head>
+<body>
+    <div class="l-external-container">
+        <div class="l-main">
+            <main class="l-outside-footer">
+                <nav class="c__navigation js-navigation">
+                    <div class="l-container-big">
+                        <div class="nav__wrapper">
+                            <div class="nav__side-left">
+                                <div class="nav__logo-box">
+                                    <a href="../home/home.html" class="">
+                                        <img src="../../assets/svg/dog-icon.svg" alt="Logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="nav__side-right">
+                                <div class="nav__links-box">
+                                    <div class="nav__link-list">
+                                        <a href="../home/home.html" class="nav__link-item">Home</a>
+                                        <a href="../reservation/reservation.html" class="nav__link-item">Zarezerwuj wizytę</a>
+                                        <a href="../doctors/doctors.html" class="nav__link-item">Lekarze</a>
+                                        <a href="../contact/contact.html" class="nav__link-item">Kontakt</a>
+                                    </div>
+                                </div>
+                                <div class="nav__account-box">
+                                    <div class="nav__account-links">
+                                        <a href="../login/login.html" class="nav__account-link-item">Zaloguj</a>
+                                        <a href="../register/register.html" class="nav__account-link-item">Zarejestruj</a>
+                                    </div>
+                                </div>
+                                <div class="nav__mobile-menu-wrapper">
+                                    <div class="nav__mobile-menu-trigger">
+                                        <div class="nav__hamburger-box hamburger-init-hidden">
+                                            <div class="hamburger hamburger--spin js-menu-trigger-mobile hamburger__mobile">
+                                                <div class="hamburger-box">
+                                                    <div class="hamburger-inner"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <aside class="c__menu-mobile js-menu-mobile">
+                                        <div class="menu-mobile__container">
+                                            <div class="menu__page-list">
+                                                <a href="../home/home.html" class="menu__page-link">Home</a>
+                                                <a href="../reservation/reservation.html" class="menu__page-link">Zarezerwuj wizytę</a>
+                                                <a href="../doctors/doctors.html" class="menu__page-link">Lekarze</a>
+                                                <a href="../contact/contact.html" class="menu__page-link">Kontakt</a>
+                                            </div>
+                                            <div class="menu__account-links">
+                                                <a href="../login/login.html" class="menu__page-account-link">Zaloguj</a>
+                                                <a href="../register/register.html" class="menu__page-account-link">Zarejestruj</a>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <section class="s__contact">
+                    <div class="l-container-big contact__container">
+                        <div class="contact__content">
+                            <div class="g__head">
+                              <h1 class="g__title">
+                                Kontakt
+                              </h1>
+                            </div>
+                            <div class="contact__content-box">
+                                <div class="contact__content-icon animated pulse">
+                                    <img src="../../assets/svg/location.svg" alt="location">
+                                </div>
+                                <div class="contact__content-text animated slideInRight">
+                                    ul. Nowa 100 <br>
+                                    00-000 Warszawa
+                                </div>
+                            </div>
+                            <div class="contact__content-box">
+                                <div class="contact__content-icon animated wobble">
+                                    <img src="../../assets/svg/phone-call.svg" alt="phone">
+                                </div>
+                                <div class="contact__content-text animated slideInRight">
+                                    Tel: <a href="tel:1234-567-890">1234-567-890</a>
+                                    <br>
+                                    Email: <a href="mailto:test@test.pl">test@test.pl</a>
+                                </div>
+                            </div>
+                            <div class="contact__map"id="map"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="l-footer-fixed">
+                <div class="c__footer">
+                    <div class="l-container-big">
+                        Copyright © 2022 Dog clinic
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

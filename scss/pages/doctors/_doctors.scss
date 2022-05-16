@@ -1,0 +1,48 @@
+& {
+    padding-bottom: 2rem;
+}
+
+
+.doctor {
+    &__item {
+        // padding: .1rem;
+
+        &-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+
+        &-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $main_color;
+
+            @include until($desktop) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}
+
+@include phone-until{
+
+}
+
+@include from($tablet) {
+
+}
+
+@include until($desktop) {
+
+}
+
+@include from($desktop) {
+
+}
+
+@include from($fullhd) {
+
+}
