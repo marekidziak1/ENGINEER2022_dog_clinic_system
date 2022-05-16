@@ -7,18 +7,23 @@
             <h1 class="g__title">Zaloguj się</h1>
         </div>
         <div class="g__form-wrapper login__form-wrapper">
-            <form action="" class="g__form">
+            <form method="POST" action="" class="g__form">
+                {% csrf_token %}
                 <div class="g__form-row">
-                    <label class="g__form-label">Email</label>
-                    <input type="email" name="loginEmail" class="g__form-input input" required>
+                    <label class="g__form-label">Nazwa Użytkownika</label>
+                    {{form.username}}
+                    {{form.username.errors}}
+                    <!-- <input type="text" name="username" class="g__form-input input" required> -->
                 </div>
                 <div class="g__form-row">
                     <label class="g__form-label">Hasło</label>
-                    <input type="password" name="loginPassword" class="g__form-input input" required>
+                    {{form.password}}
+                    {{form.password.errors}}
+                    <!-- <input type="password" name="password" class="g__form-input input" required> -->
                 </div>
                 <div class="g__form-row g__form-row-submit">
-                    <!-- <button class="g__form-btn">Zaloguj</button> -->
-                    <a href="../your_dogs/your_dogs.html" class="g__form-btn">Zaloguj</a>
+                    <button type="submit" class="g__form-btn">Zaloguj</button>
+                    <!-- <a href="../your_dogs/your_dogs.html" class="g__form-btn">Zaloguj</a> -->
                 </div>
             </form>
             <div class="login__register-info has-text-centered">
