@@ -1,0 +1,143 @@
+*{
+	box-sizing:border-box;
+}
+
+ul,p{
+	margin:0px;
+}
+
+ul{
+	list-style:none;
+	padding:0px;
+}
+
+
+a, a:visited{
+	text-decoration:none;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+button,a {
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: inherit;
+}
+
+
+
+
+button, input[type="reset"], input[type="button"], input[type="submit"] { 
+    overflow: visible;
+    border: 0;
+    font: inherit;
+    -webkit-font-smoothing: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+    padding:0px; //dodano
+}
+
+fieldset{
+  border:0px;
+  padding:0px;
+}
+
+
+
+//transition tylko dla koloru zeby niknac dziwnych rzeczy z zmiana wysokosci opóźnioną
+button,a {
+  transition: color .3s ease,background-color .3s ease,border-color .3s ease,opacity .3s ease;
+}
+
+
+textarea{
+  font-family: inherit;
+  font-size:inherit;
+  color:inherit;
+}
+
+//usuwa biala linie pod obrazkiem
+//chodzi o to:
+//https://getpocket.com/a/read/667377816
+img, svg{
+  vertical-align:text-bottom;
+}
+
+
+//usun domyslny kursor z tekstu
+
+body{
+  cursor:default;
+}
+
+
+//safari usun zaokraglenie
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+//wyswietlaj checkboxy
+
+input[type=checkbox]
+{
+  -webkit-appearance:checkbox;
+}
+
+
+ //Remove most spacing between table cells.
+ 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+// poprawka normalize, psuło fixed footer
+
+html{
+    line-height: initial;
+}
+
+date{
+  display: inline-block;
+}
+
+// usun niebieska ramke
+
+*:focus {
+  outline:0;
+}
+
+// svg dziedzicz kolor
+svg{
+  fill: currentColor;
+  transition: fill 0.3s ease;
+}
