@@ -7,30 +7,35 @@
                 <h1 class="g__title">Zarejestruj się</h1>
             </div>
             <div class="g__form-wrapper">
-                <form action="" class="g__form">
+                <form method="POST" action="" class="g__form">
+                    {% csrf_token %}
                     <div class="g__form-row">
-                        <label class="g__form-label">Imię</label>
-                        <input type="text" name="registerName" class="g__form-input input" required>
-                    </div>
-                    <div class="g__form-row">
-                        <label class="g__form-label">Nazwisko</label>
-                        <input type="text" name="registerSurname" class="g__form-input input" required>
+                        <label class="g__form-label">Nazwa Użytkownika</label>
+                        {{form.username}}
+                        {{form.username.errors}}
+                        <!-- <input type="text" name="username"  class="g__form-input input" required> -->
                     </div>
                     <div class="g__form-row">
                         <label class="g__form-label">Email</label>
-                        <input type="email" name="registerEmail" class="g__form-input input" required>
+                        {{form.email}}
+                        {{form.email.errors}}
+                        <!-- <input type="email" name="email" class="g__form-input input" required> -->
                     </div>
                     <div class="g__form-row">
                         <label class="g__form-label">Hasło</label>
-                        <input type="password" name="registerPassword" class="g__form-input input" required>
+                        {{form.password1}}
+                        {{form.password1.errors}}
+                        <!-- <input type="password" name="password1" class="g__form-input input" required> -->
                     </div>
                     <div class="g__form-row">
                         <label class="g__form-label">Powtórz hasło</label>
-                        <input type="password" name="registerRepeatPassword" class="g__form-input input" required>
+                        {{form.password2}}
+                        {{form.password2.errors}}
+                        <!-- <input type="password" name="password2" class="g__form-input input" required> -->
                     </div>
                     <div class="g__form-row g__form-row-submit">
-                        <!-- <button class="g__form-btn">Zarejestruj</button> -->
-                        <a href="../your_dogs/your_dogs.html" class="g__form-btn">Zarejestruj</a>
+                        <button type="submit" class="g__form-btn">Zarejestruj</button>
+                        <!-- <a href="../your_dogs/your_dogs.html" class="g__form-btn">Zarejestruj</a> -->
                     </div>
                 </form>
                 <div class="register__login-info has-text-centered">
