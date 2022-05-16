@@ -19,10 +19,17 @@
                     </div>
                 </div>
                 <div class="nav__account-box">
+                    {% if request.user.is_authenticated %}
                     <div class="nav__account-links">
-                        <a href="../login/login.html" class="nav__account-link-item">Zaloguj</a>
-                        <a href="../register/register.html" class="nav__account-link-item">Zarejestruj</a>
+                        <a href="#" class="nav__account-link-item">{{request.user.username}}</a>
+                        <a href="{% url 'logout_user' %}" class="nav__account-link-item">wyloguj</a>
                     </div>
+                    {% else %}
+                    <div class="nav__account-links">
+                        <a href="{% url 'login_user' %}" class="nav__account-link-item">zaloguj</a>
+                        <a href="{% url 'register_user' %}" class="nav__account-link-item">zarejestruj</a>
+                    </div>
+                    {% endif %}
                 </div>
                 <div class="nav__mobile-menu-wrapper">
                     <div class="nav__mobile-menu-trigger">
@@ -42,10 +49,17 @@
                                 <a href="../doctors/doctors.html" class="menu__page-link">Lekarze</a>
                                 <a href="../contact/contact.html" class="menu__page-link">Kontakt</a>
                             </div>
+                            {% if user.is_authenticated %}
                             <div class="menu__account-links">
-                                <a href="../login/login.html" class="menu__page-account-link">Zaloguj</a>
-                                <a href="../register/register.html" class="menu__page-account-link">Zarejestruj</a>
+                                <a href="#" class="menu__page-account-link">{{request.user.username}}</a>
+                                <a href="{% url 'logout_user' %}" class="menu__page-account-link">wyloguj</a>
                             </div>
+                            {% else %} 
+                            <div class="menu__account-links">
+                                <a href="{% url 'login_user' %}" class="menu__page-account-link">zaloguj</a>
+                                <a href="{% url 'register_user' %}" class="menu__page-account-link">zarejestruj</a>
+                            </div>
+                            {% endif %}
                         </div>
                     </aside>
                 </div>
