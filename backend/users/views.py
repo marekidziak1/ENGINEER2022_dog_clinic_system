@@ -5,8 +5,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
 
 
-# Create your views here.
-def registerView(request):
+def registerUser(request):
     form = UserRegisterForm()
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
@@ -29,7 +28,7 @@ def registerView(request):
     context={'form':form}
     return render(request, 'users/register.html', context)
 
-def loginView(request):
+def loginUser(request):
     form= UserAuthenticationForm()
     if request.method == "POST":
         form = UserAuthenticationForm(data=request.POST)
@@ -41,4 +40,9 @@ def loginView(request):
             messages.error(request, 'Zła nazwa użytkownika lub hasło')
     context={'form':form}
     return render(request, "users/login.html", context)
+
+
+def logoutUser(request):
+    logout(request)
+    return redirect('home')
 
