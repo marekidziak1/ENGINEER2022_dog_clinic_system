@@ -39,8 +39,8 @@ class UserUpdateForm(forms.ModelForm):
         model=User
         fields = ['username']
 class ProfileUpdateForm(forms.ModelForm):
-    name = forms.CharField(max_length=60, widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'name & surname','type':"text"}))
-    email = forms.EmailField(max_length=60, widget=EmailInput(attrs={'class': 'g__form-input input','placeholder': 'email','type':"email"}))
+    name = forms.CharField(max_length=60,required=False, widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'name & surname','type':"text"}))
+    email = forms.EmailField(max_length=60, required=False, widget=EmailInput(attrs={'class': 'g__form-input input','placeholder': 'email','type':"email"}))
     mobileNumber = PhoneNumberField(widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'phone number','type':"text"}))#(max_length=15, widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'username','type':"text"}))
     class Meta:
         model = Profile

@@ -11,3 +11,12 @@ class Profile(models.Model):
     mobileNumber = PhoneNumberField(unique=False, null=False)
     def __str__(self):
         return self.name
+
+class Doctor(models.Model):
+    profile = models.OneToOneField(Profile, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.profile.name + 'doctor'
+class Owner(models.Model):
+    profile = models.OneToOneField(Profile, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.profile.name + 'owner'

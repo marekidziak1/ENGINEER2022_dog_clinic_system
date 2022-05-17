@@ -27,6 +27,7 @@ def registerUser(request):
                     user = authenticate(request, username=username, password = password)
                     if user is not None:
                         login(request, user)
+                        #messages.add_message(request, messages.INFO, 'Użytkownik utworzony i zalogowany')
                         messages.info(request, 'Użytkownik utworzony i zalogowany')
                         return redirect('update_profile')
                 except:
@@ -55,7 +56,11 @@ def loginUser(request):
 
 @login_required
 def logoutUser(request):
-    logout(request)
+    try:
+        logout(request)
+        messages.success(request, 'Zostałes wylogowany')
+    except:
+        messages.error(request, 'Nie można wylogować ')
     return redirect('home')
 
 @login_required
@@ -70,8 +75,9 @@ def updateProfile(request,):
             user.username = user.username.lower()
             user.save()
             profileUpdateForm.save()
-            messages.success(request, f'Your account has been updated')
+            #messages.success(request, 'Twoje konto zostało zaktualizowane')
+            messages.add_message(request, messages.SUCCESS, 'Twoje konto zostało zaktualizowane')
             return redirect('update_profile')
-        messages.error(request, f"Your account coudn't be updated")
+        messages.error(request, "Twoje konto nie mogło zostać zaktualizowane")
     context={'userUpdateForm':userUpdateForm, 'profileUpdateForm': profileUpdateForm}
     return render(request, 'users/account_edit.html', context)
