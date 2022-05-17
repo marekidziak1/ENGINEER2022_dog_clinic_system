@@ -22,8 +22,8 @@
                     </div>
                     <div class="g__form-row">
                         <label class="g__form-label">email</label>
-                        {{profileUpdateForm.email}}
-                        {{profileUpdateForm.email.errors}}
+                        {{userUpdateForm.email}}
+                        {{userUpdateForm.email.errors}}
                     </div>
                     <div class="g__form-row">
                         <label class="g__form-label">Numer Telefonu</label>
@@ -32,6 +32,9 @@
                     </div>
                     <div class="g__form-row g__form-row-submit">
                         <button type="submit" class="g__form-btn">Zapisz</button>
+                    </div>
+                    <div class="g__form-row">
+                        <button class="g__form-btn"><a href="{% url 'reset_password' %}">zmień hasło</a></button>
                     </div>
                 </form>
             </div>
