@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class="c__breadcrumb"></section>
+    <section class="s__register">
+        <div class="l-container-big">
+            <div class="g__head register__head has-text-centered">
+                <h1 class="g__title">Zarejestruj się</h1>
+            </div>
+            <div class="g__form-wrapper">
+                <form method="POST" action="" class="g__form">
+                    {% csrf_token %}
+                    <div class="g__form-row">
+                        <label class="g__form-label">Nazwa Użytkownika</label>
+                        {{userForm.username}}
+                        {{userForm.username.errors}}
+                        <!-- <input type="text" name="username"  class="g__form-input input" required> -->
+                    </div>
+                    <div class="g__form-row">
+                        <label class="g__form-label">Numer Telefonu</label>
+                        {{profileRegisterForm.mobileNumber}}
+                        {{profileRegisterForm.mobileNumber.errors}}
+                    </div>
+                    <div class="g__form-row">
+                        <label class="g__form-label">Hasło</label>
+                        {{userForm.password1}}
+                        {{userForm.password1.errors}}
+                        <!-- <input type="password" name="password1" class="g__form-input input" required> -->
+                    </div>
+                    <div class="g__form-row">
+                        <label class="g__form-label">Powtórz hasło</label>
+                        {{userForm.password2}}
+                        {{userForm.password2.errors}}
+                        <!-- <input type="password" name="password2" class="g__form-input input" required> -->
+                    </div>
+                    <div class="g__form-row g__form-row-submit">
+                        <button type="submit" class="g__form-btn">Zarejestruj</button>
+                        <!-- <a href="../your_dogs/your_dogs.html" class="g__form-btn">Zarejestruj</a> -->
+                    </div>
+                </form>
+                <div class="register__login-info has-text-centered">
+                    Masz konto?
+                    <a href="../login/login.html" class="register__login-info-link">Zaloguj się</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

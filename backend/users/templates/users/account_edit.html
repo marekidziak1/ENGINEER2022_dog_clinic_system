@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class="c__breadcrumb"></section>
+    <section class="s__account-edit">
+        <div class="l-container-big">
+            <div class="g__head has-text-centered">
+                <h1 class="g__title">Edycja konta</h1>
+            </div>
+            <div class="g__form-wrapper">
+                <form method="POST" action="" class="g__form">
+                    {%csrf_token%}
+                    <div class="g__form-row">
+                        <label class="g__form-label">Nazwa Użytkownika</label>
+                        {{userUpdateForm.username}}
+                        {{userUpdateForm.username.errors}}
+                        <!-- <input type="text" name="username"  class="g__form-input input" required> -->
+                    </div>
+                    <div class="g__form-row">
+                        <label class="g__form-label">Imie Nazwisko</label>
+                        {{profileUpdateForm.name}}
+                        {{profileUpdateForm.name.errors}}
+                    </div>
+                    <div class="g__form-row">
+                        <label class="g__form-label">email</label>
+                        {{userUpdateForm.email}}
+                        {{userUpdateForm.email.errors}}
+                    </div>
+                    <div class="g__form-row">
+                        <label class="g__form-label">Numer Telefonu</label>
+                        {{profileUpdateForm.mobileNumber}}
+                        {{profileUpdateForm.mobileNumber.errors}}
+                    </div>
+                    <div class="g__form-row g__form-row-submit">
+                        <button type="submit" class="g__form-btn">Zapisz</button>
+                    </div>
+                    <div class="g__form-row">
+                        <button class="g__form-btn"><a href="{% url 'reset_password' %}">zmień hasło</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

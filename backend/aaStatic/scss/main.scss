@@ -1,0 +1,107 @@
+// bulma
+$gap: 32px;
+@import 'plugins/bulma-0.9.3/sass/utilities/_all';
+@import 'plugins/bulma-0.9.3/sass/base/_all';
+@import 'plugins/bulma-0.9.3/sass/elements/_all';
+@import 'plugins/bulma-0.9.3/sass/components/_all';
+@import 'plugins/bulma-0.9.3/sass/grid/_all';
+@import 'plugins/bulma-0.9.3/sass/layout/_all';
+@import 'plugins/bulma-0.9.3/sass/helpers/_all';
+@import 'plugins/bulma-0.9.3/sass/form/_all';
+// normalize
+@import 'plugins/normalize';
+@import 'plugins/animate';
+// @import 'plugins/sass-rem-master/rem';
+// base settings
+@import 'base/reset';
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/settings';
+@import 'base/structure';
+@import 'common/classes';
+
+// sections
+.s__home-main {
+    @import 'pages/home/_home_main';
+}
+.s__contact {
+    @import 'pages/contact/_contact';
+}
+.s__login {
+    @import 'pages/login/_login';
+}
+.s__register {
+    @import 'pages/register/register';
+}
+.s__account-edit {
+    @import 'pages/account_edit/account_edit';
+}
+.s__your-dogs {
+    @import 'pages/your_dogs/your_dogs';
+}
+.s__add-dog {
+    @import 'pages/add_dog/add_dog';
+}
+.s__reservation {
+    @import 'pages/reservation/reservation';
+}
+.s__doctors {
+    @import 'pages/doctors/doctors';
+}
+.s__diseases {
+    @import 'pages/diseases/diseases';
+}
+.s__medicines {
+    @import 'pages/medicines/medicines';
+}
+.s__visits {
+    @import 'pages/visits/visits';
+}
+.s__doctor-login {
+    @import 'pages/doctor_login/doctor_login';
+}
+.s__doctor-check-visits {
+    @import 'pages/doctor_check_visits/doctor_check_visits';
+}
+.s__doctor-check-visits {
+    @import 'pages/doctor_check_visits/doctor_check_visits';
+}
+.s__doctor-browse-patients {
+    @import 'pages/doctor_browse_patients/doctor_browse_patients';
+}
+.s__add-diagnosis {
+    @import 'pages/add_diagnosis/add_diagnosis';
+}
+.s__visits-history {
+    @import 'pages/visits_history/visits_history';
+}
+.s__medicines-history {
+    @import 'pages/medicines_history/medicines_history';
+}
+.s__diseases-history {
+    @import 'pages/diseases_history/diseases_history';
+}
+.s__single-doctor {
+    @import 'pages/single_doctor/single_doctor';
+}
+
+
+// components
+.c__navigation {
+    @import 'components/_navigation';
+}
+.c__menu-mobile {
+    @import 'components/_menu_mobile';
+}
+.c__footer {
+    @import 'components/_footer';
+}
+.c__breadcrumb {
+    @import 'components/_breadcrumb';
+}
+.c__intro {
+    @import 'components/_intro';
+}
+.c__parallax {
+    @import 'components/_parallax';
+}
