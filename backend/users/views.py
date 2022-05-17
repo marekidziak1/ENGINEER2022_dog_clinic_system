@@ -3,6 +3,7 @@ from .forms import UserAuthenticationForm, ProfileRegisterForm, UserUpdateForm, 
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import Group
 from django.shortcuts import render, redirect
 
 def registerUser(request):
@@ -17,6 +18,9 @@ def registerUser(request):
                 user = userForm.save(commit=False)
                 user.username = user.username.lower()
                 user.save()
+                #add to owner group:
+                group = Group.objects.get(name='owner')
+                user.groups.add(group)
                 #update Profile 
                 profileRegisterForm = ProfileRegisterForm(request.POST, instance=user.profile)  
                 profileRegisterForm.save()

@@ -1,5 +1,8 @@
 from django.shortcuts import redirect
 from django.contrib import messages
+
+
+#ex @doctor_only
 def doctor_only(view_func):
     def wrapper_func(request, *args, **kwargs):
         group = None
@@ -8,9 +11,11 @@ def doctor_only(view_func):
                 if group.name == 'doctor':
                     return view_func(request, *args, **kwargs)  
         messages.info(request,'You are not authorized')
-        return redirect('user-page')
+        return redirect('home')
     return wrapper_func		
 
+
+#ex: @allowed_users(allowed_roles=['doctor', 'owner'])
 def allowed_users(allowed_roles=None):
     if allowed_roles == None:
         allowed_roles= []
