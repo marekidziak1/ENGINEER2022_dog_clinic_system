@@ -1,10 +1,11 @@
 from .models import Profile
 from django import forms
-from django.forms.widgets import PasswordInput, TextInput
+from django.forms.widgets import PasswordInput, TextInput, EmailInput
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from phonenumber_field.formfields import PhoneNumberField
 
+#REGISTER USER (creating profile)
 class UserRegisterForm(UserCreationForm):
     username = forms.CharField(max_length=15, widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'username','type':"text"}))
     password1 = forms.CharField(max_length=30, widget=PasswordInput(attrs={'class': 'g__form-input input','placeholder':'type password','type':"password"}))
@@ -17,7 +18,13 @@ class UserRegisterForm(UserCreationForm):
     #     self.fields['username'].widget.attrs.update({'class': 'g__form-input input', 'type':"text"})
     #     self.fields['password1'].widget.attrs.update({'class': 'g__form-input input', 'type':"password"})
     #     self.fields['password2'].widget.attrs.update({'class': 'g__form-input input', 'type':"password"})
+class ProfileRegisterForm(forms.ModelForm):
+    mobileNumber = PhoneNumberField(widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'phone number','type':"text"}))#(max_length=15, widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'username','type':"text"}))
+    class Meta:
+        model = Profile
+        fields = ['mobileNumber']
 
+#LOGIN USER
 class UserAuthenticationForm(AuthenticationForm):
     username = forms.CharField(max_length=20, widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'username','type':"text"}))
     password = forms.CharField(max_length=30, widget=PasswordInput(attrs={'class': 'g__form-input input','placeholder':'password','type':"password"}))
@@ -25,9 +32,16 @@ class UserAuthenticationForm(AuthenticationForm):
         model = User
         fields = ['username','password']
 
-class ProfileRegisterForm(forms.ModelForm):
+# UPDATE PROFILE (&user)
+class UserUpdateForm(forms.ModelForm):
+    username = forms.CharField(max_length=15, widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'username','type':"text"}))
+    class Meta:
+        model=User
+        fields = ['username']
+class ProfileUpdateForm(forms.ModelForm):
     name = forms.CharField(max_length=60, widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'name & surname','type':"text"}))
+    email = forms.EmailField(max_length=60, widget=EmailInput(attrs={'class': 'g__form-input input','placeholder': 'email','type':"email"}))
     mobileNumber = PhoneNumberField(widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'phone number','type':"text"}))#(max_length=15, widget=TextInput(attrs={'class': 'g__form-input input','placeholder': 'username','type':"text"}))
     class Meta:
         model = Profile
-        fields = ['name','mobileNumber']
+        fields = ['name','email','mobileNumber']

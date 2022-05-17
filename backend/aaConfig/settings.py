@@ -71,7 +71,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'aaConfig.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
@@ -120,8 +119,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'aaStatic/'), ]
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+#models PHONE NUMBER EDIT
+PHONENUMBER_DEFAULT_REGION = "PL"
+PHONENUMBER_DEFAULT_FORMAT = "NATIONAL"
+
+LOGIN_URL = 'login_user'
